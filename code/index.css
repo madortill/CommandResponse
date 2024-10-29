@@ -391,7 +391,7 @@ td {
 .td-tabel {
     text-align: center;
     font-size: 1rem;
-    padding: 0% 0%;
+    padding: -1% 0%;
     width: 40%;
 }
 
@@ -512,7 +512,8 @@ td {
 }
 
 .shelfPicSection {
-    padding-top: 1em;
+    padding-top: 1em ;
+    /* padding: 0 1em; */
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
