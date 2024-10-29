@@ -12,16 +12,6 @@ let objMedInfo = {
         type: "imgTemp",
     },
 
-    // "medicalEquipment": {
-    //     name: 'ציוד רפואי',
-    //     type: 'text-medicalEquipment',
-    // },
-    // "ambulanceBtn": {
-    //     name: 'אמבולנס',
-    //     type: 'ambulance-btn'    
-    // },
-
-    // הכניסה  לגזרה 
     "dailyAlertnessCheck": {
         name: 'בדיקת כוננות יומיות',
         type: "standbyTestDaily",
@@ -66,13 +56,6 @@ let objMedInfo = {
         name: 'המרות',
         type: "videoAndImgConversions",
     },
-    // "confessionHighlights": {
-    //     name: 'דגשים לווידוא כשירות',
-    //     type: "textHighlights",
-    // },
-
-
-
     "volumedDevice": {
         name: 'נפח במכשיר',
         type: "videoVolumedDevice",
@@ -134,11 +117,10 @@ let objMedsShelfsColors = {//צבע, מספר מדפים, כותרת
     antiallergic: ["pink", 9, "זכויות מרכזיות"],
     antibiotics: ["darkGreen",2, "איתור סימני מצוקה"],
     breathing: ["orange", 10, " מסדר יציאה"],
-    digestion : ["yellow", 5, "תגובה פיקודית"],
+    digestion : ["yellow", 2, "תגובה פיקודית"],
+    ways : ["yellow", 4, "דרכי פעולה"],
     chronicDiseases: ["teal", 1, " לסיכום "],
-    
-    // painkillers : ["purple", 4, "משככי כאבים"],
-    // otherMeds : ["lightGreen", 1, "תרופות אחרות"],
+
 }
 
 // varubal
@@ -153,23 +135,19 @@ let QUESTIONS = [];
 Description: */
 window.addEventListener("load", () => {
     document.querySelector(".loader").classList.add("fade");
-    // place listeners on search button, about button and med buttons
     document.querySelector('.btnNext').addEventListener('click', () => {
-        console.log('click');
         document.getElementsByClassName('open-screen')[0].style.display = 'none';
         document.getElementsByClassName('homePage')[0].style.display = 'block';
     });
     
     document.querySelector('.searchButton').addEventListener('click', onClickSearch);
-    document.querySelector('.aboutButton').addEventListener('click', onClickAbout);
-    // if(document.querySelector('.searchButton').classList.contains("aboutPageBtn")) {
-    //     document.querySelector('.searchButton').addEventListener('click', onClickSearch);
-    // }
+    // document.querySelector('.aboutButton').addEventListener('click', onClickAbout);
+
     let arrMedsButtons = document.querySelectorAll('.mainPageButton');
     for (let i = 0; i < arrMedsButtons.length; i++) {
         arrMedsButtons[i].addEventListener('click', creatMedShelfs);
     };
-    // document.querySelector(`.testButton`).addEventListener("click", onClickExam);
+
 });
 
 /* onClickAbout
@@ -183,7 +161,7 @@ const onClickAbout = () => {
     // משנה את התמונה של הכפתור העליון
     document.querySelector('.topButton').classList.add("aboutPageBtn");
     document.querySelector('.topButton').setAttribute("src", "../assets/images/grapics/home-page/right-arrow.svg");
-    strcurrentPage = "aboutPage"
+    strcurrentPage = "aboutPage";
 }
 
 /* onClickSearch
@@ -219,8 +197,6 @@ const onClickSearch = () => {
         // מעלים כותרת וכפתורים ומשנה גל
         document.querySelector('.title').classList.add("hidden");
         document.querySelector('.aboutButton').classList.add("hidden");
-        // document.querySelector('.medTypeSymbol').classList.add("hidden");
-        // document.querySelector('.wave').setAttribute("src", "../assets/images/grapics/home-page/search-wave.svg");
         // הופך את המסך לשחור
         document.querySelector('.searchScren').classList.add("darkScreen");
 
@@ -232,10 +208,8 @@ const onClickSearch = () => {
             document.querySelector('.searchScren').classList.remove("darkScreen");
             // מחזיר כותרת ומשנה בחזרה גל
             document.querySelector('.title').classList.remove("hidden");
-            // document.querySelector('.wave').setAttribute("src", "../assets/images/grapics/home-page/opening-wave.svg");
             if (strcurrentPage === "medShelf") {
                 // מחזיר מדפי תרופות
-                // document.querySelector('.medTypeSymbol').classList.remove("hidden");
             } else {
                 // מחזיר מסך בית
                 document.querySelector('.aboutButton').classList.remove("hidden");
@@ -295,7 +269,6 @@ const creatMedID = (event) => {
         document.querySelector('.dropDown').classList.add("hidden");
         document.querySelector('.searchScren').classList.remove("darkScreen");
         document.querySelector('.title').classList.remove("hidden");
-        // document.querySelector('.wave').setAttribute("src", "../assets/images/grapics/home-page/opening-wave.svg");
         document.querySelector('.dropDown').style.pointerEvents = "none";
     }
     // משנה כפתור עליון
@@ -311,17 +284,6 @@ const creatMedID = (event) => {
     let template = document.querySelector(`.${objCurrentMed.type}`);
     let clon = template.content.cloneNode(true);
     document.querySelector('.medicineId').appendChild(clon);
-    // מכניס מידע מהאובייקט לתעודת זהות
-    // for (let key of Object.keys(objCurrentMed)) {
-        // Check which key and change html accordingly
-        // if (key === "pic") {
-        //     document.querySelector(`.${key}`).setAttribute("src", `../assets/images/${objCurrentMed[key]}.png`)
-        // } else if (key === "mechanismOfAction" && objCurrentMed.type === "withMechanism") {
-        //     document.querySelector(`.${key}`).innerHTML = `${objCurrentMed[key]}`;
-        // }
-        //  else if (key !== "type" && key !== "medType") {
-        //     document.querySelector(`.${key}`).innerHTML = `${objCurrentMed[key]}`; }
-    // }
     // שם מאזין לחץ חזור לפי הדף שהיה קודם
     if (strcurrentPage === "medShelf") {
         document.querySelector('.topButton').addEventListener("click", creatMedShelfs);
@@ -333,14 +295,10 @@ const creatMedID = (event) => {
     if (bSearchScreen === true) {
         // משנה צבע
         if (strCurrentMedType !== undefined) {
-            // document.querySelector(`.wave`).classList.remove(objMedsShelfsColors[strCurrentMedType][0]);
-            // document.querySelector(`.topButton`).classList.remove(objMedsShelfsColors[strCurrentMedType][0]);
         }
         // שומר סוג תרופה
         strMedTypeFromSearch = objCurrentMed.medType;
         // משנה צבע של הגל והכפתור
-        // document.querySelector(`.wave`).classList.add(objMedsShelfsColors[strMedTypeFromSearch][0]);
-        // document.querySelector(`.topButton`).classList.add(objMedsShelfsColors[strMedTypeFromSearch][0]);
     }
 }
 
@@ -355,19 +313,15 @@ const addSpace = (phrase) => {
 --------------------------------------------------------------
 Description: */
 const creatMedShelfs = (event) => {
-    console.log("in")
     if (strcurrentPage === "medId") {
         //  מעלים תעודת זהות, משנה מאפיינים לכותרת ומראה סמל
         document.querySelector('.medicineId').classList.add("hidden");
         document.querySelector(`.title`).classList.remove("titelMedId");
         // משנה את הכפתור העליון ושם לו מאזין  
-        // document.querySelector('.medTypeSymbol').classList.remove("hidden");
         document.querySelector('.topButton').setAttribute("src", "../assets/images/grapics/home-page/search-button.svg");
         document.querySelector('.topButton').removeEventListener("click", creatMedShelfs);
         // משנה צבע של הגל והכפתור
         if (strMedTypeFromSearch !== undefined) {
-            // document.querySelector(`.wave`).classList.remove(objMedsShelfsColors[strMedTypeFromSearch][0]);
-            // document.querySelector(`.topButton`).classList.remove(objMedsShelfsColors[strMedTypeFromSearch][0]);
         }
     } else if (strcurrentPage === "homePage") {
         // שומר את סוג התרופות ומעלים מסך בית
@@ -378,7 +332,6 @@ const creatMedShelfs = (event) => {
         // משנה מאפיינים של כותרת
         document.querySelector(`.titleConeiner`).classList.remove("titleContainerPractice");
         // משנה גל וכפתור עליון
-        // document.querySelector('.wave').setAttribute("src", "../assets/images/grapics/home-page/opening-wave.svg");
         document.querySelector('.topButton').setAttribute("src", "../assets/images/grapics/home-page/search-button.svg");
         document.querySelector('.topButton').classList.remove("topButtonPractice");
         // מעלים דמות ושאלה
@@ -396,22 +349,16 @@ const creatMedShelfs = (event) => {
     // שומר את העמוד הנוכחי
     strcurrentPage = "medShelf"
     // משנה צבע לפי הסוג
-    // document.querySelector(`.wave`).classList.add(objMedsShelfsColors[strCurrentMedType][0]);
-    // document.querySelector(`.topButton`).classList.add(objMedsShelfsColors[strCurrentMedType][0]);
-    // document.querySelector(`.searchBoxHolder`).classList.add(objMedsShelfsColors[strCurrentMedType][0]);
     document.querySelector(`.shelfsButtons .homeButton`).classList.add(objMedsShelfsColors[strCurrentMedType][0]);
-    // document.querySelector(`.practiceButton`).classList.add(objMedsShelfsColors[strCurrentMedType][0]);
     // משנה כותרת
     document.querySelector(`.title`).innerHTML = objMedsShelfsColors[strCurrentMedType][2];
     document.querySelector(`.title`).classList.add("titleMedShelfs");
     // מראה מדפים, סמל בכותרת וכפתורים למטה
     document.querySelector(`.${strCurrentMedType}Shelf`).classList.remove("hidden");
-    // document.querySelector(`.medTypeSymbol`).classList.remove("hidden");
     document.querySelector(`.shelfsButtons`).classList.remove("hidden");
     document.querySelector(`.homeButton`).addEventListener("click", sendToHomePage);
     // שומר שאלות ושולח לתרגול
     QUESTIONS = shuffle(DATA[strCurrentMedType]["questionsPractice"]);
-    // document.querySelector(`.practiceButton`).addEventListener("click", onClickPractice);
     // משנה צבע מדפים ושם מאזין לפתיחה שלהם
     for (let i = 1; i <= objMedsShelfsColors[strCurrentMedType][1]; i++) {
         document.querySelector(`.${strCurrentMedType}Shelf > .shelf${i}`).addEventListener("click", controlShelfsDropDown)
@@ -424,24 +371,71 @@ const creatMedShelfs = (event) => {
 /* controlShelfsDropDown
 --------------------------------------------------------------
 Description: */
+
 const controlShelfsDropDown = (event) => {
-    // שומר מדף שנלחץ
     let strChosenShelf = event.currentTarget.classList[1];
-    // סוגר מדף
-    if (document.querySelector(`.${strCurrentMedType}Shelf >  .${strChosenShelf} .downButton`).getAttribute("src").includes("up")) {
-        document.querySelector(`.${strCurrentMedType}Shelf >  .${strChosenShelf} .downButton`).setAttribute("src", "../assets/images/grapics/med-shelfs/down-button.svg");
-        document.querySelector(`.${strCurrentMedType}Shelf >  .${strChosenShelf}dropDown`).classList.add("hidden");
-    } else { // פותח מדף
-        let arrMedIdButtons = document.querySelectorAll(`.${strCurrentMedType}Shelf >  .${strChosenShelf}dropDown .shelfMedPicContainer `);
-        for (let i = 0; i < arrMedIdButtons.length; i++) {
-            if (arrMedIdButtons[i].classList.contains(('buttonText'))) {
-                arrMedIdButtons[i].addEventListener('click', creatMedID);
-            }
-        }
-        document.querySelector(`.${strCurrentMedType}Shelf >  .${strChosenShelf}dropDown`).classList.remove("hidden");
-        document.querySelector(`.${strCurrentMedType}Shelf >  .${strChosenShelf} .downButton`).setAttribute("src", "../assets/images/grapics/med-shelfs/up-button.svg");
+    const downButton = document.querySelector(`.${strCurrentMedType}Shelf .${strChosenShelf} .shelfHedline .downButton`);
+    if (downButton === 'null') {
+        strCurrentMedType = 'digestion';
+        downButton = document.querySelector(`.${strCurrentMedType}Shelf .${strChosenShelf} .shelfHedline .downButton`);
     }
-}
+    const isOpen = downButton.getAttribute("src").includes("up");
+ 
+    
+    // Close shelf if it is already open
+    if (isOpen) {
+        downButton.setAttribute("src", "../assets/images/grapics/med-shelfs/down-button.svg");
+        document.querySelector(`.${strCurrentMedType}Shelf > .${strChosenShelf}dropDown`).classList.add("hidden");
+    } else { 
+        downButton.setAttribute("src", "../assets/images/grapics/med-shelfs/up-button.svg");
+        document.querySelector(`.${strCurrentMedType}Shelf > .${strChosenShelf}dropDown`).classList.remove("hidden");
+    }
+
+    if (strCurrentMedType === 'digestion' && strChosenShelf === 'shelf2') {
+        const waysShelf = document.querySelector('.waysShelf');
+        if (waysShelf) {
+           // Select all divs with the specified classes
+            const shelves = document.querySelectorAll('.shelfA, .shelfB, .shelfC, .shelfD');
+
+            // Add click event listener to each shelf
+            shelves.forEach(shelf => {
+                shelf.addEventListener("click", (event) => {
+                    // Call the controlInnerShelfsDropDown function when clicked
+                    controlInnerShelfsDropDown(event);
+                });
+            });
+
+        }
+        }
+       
+};
+
+
+const controlInnerShelfsDropDown = (event) => {
+    strCurrentMedType = "ways";
+    let strChosenShelf = event.currentTarget.classList[0];
+    const downButton = document.querySelector(`.${strChosenShelf} .shelfHedlineInner .downButtonInner`);
+
+    const isOpen = downButton.getAttribute("src").includes("up");
+
+    // Close shelf if it is already open
+    if (isOpen) {
+        downButton.setAttribute("src", "../assets/images/grapics/med-shelfs/down-button.svg");
+        document.querySelector(`.${strCurrentMedType}Shelf > .${strChosenShelf}dropDown`).classList.add("hidden");
+    } else { 
+        downButton.setAttribute("src", "../assets/images/grapics/med-shelfs/up-button.svg");
+        document.querySelector(`.${strCurrentMedType}Shelf > .${strChosenShelf}dropDown`).classList.remove("hidden");
+    }
+
+    // Re-add event listeners to the outer shelves
+    strCurrentMedType = 'digestion';
+    for (let i = 1; i <= objMedsShelfsColors[strCurrentMedType][1]; i++) {
+        document.querySelector(`.${strCurrentMedType}Shelf > .shelf${i}`).addEventListener("click", controlShelfsDropDown);
+        }
+    
+};
+
+
 
 /* sendToHomePage
 --------------------------------------------------------------
@@ -449,8 +443,6 @@ Description: */
 const sendToHomePage = () => {
     if (strcurrentPage === "medId") {
         // מוריד צבע של הגל והכפתור
-        // document.querySelector(`.wave`).classList.remove(objMedsShelfsColors[strMedTypeFromSearch][0]);
-        // document.querySelector(`.topButton`).classList.remove(objMedsShelfsColors[strMedTypeFromSearch][0]);
         // לא מאפשר מאזיני לחיצה, מעלים תעודת זהות ומאפיינים של הכותרת
         document.querySelector('.medicineId').style.pointerEvents = "none";
         document.querySelector('.medicineId').classList.add("hidden");
@@ -465,12 +457,7 @@ const sendToHomePage = () => {
         document.querySelector(`.shelfsButtons`).classList.add("hidden");
         // משנה מאפיינים של כותרת
         document.querySelector(`.title`).classList.remove("titleMedShelfs");
-        // משנה חזרה צבעים לכחול
-        // document.querySelector(`.wave`).classList.remove(objMedsShelfsColors[strCurrentMedType][0]);
-        // document.querySelector(`.topButton`).classList.remove(objMedsShelfsColors[strCurrentMedType][0]);
-        // document.querySelector(`.searchBoxHolder`).classList.remove(objMedsShelfsColors[strCurrentMedType][0]);
         document.querySelector(`.shelfsButtons .homeButton`).classList.remove(objMedsShelfsColors[strCurrentMedType][0]);
-        // document.querySelector(`.practiceButton`).classList.remove(objMedsShelfsColors[strCurrentMedType][0]);
     } else if (strcurrentPage === "examPrePage") {
         // מעלים דף התחלת מבחן, ומשנה כפתור עליו לחיפוש 
         document.querySelector(`.examPage`).classList.add("hidden");

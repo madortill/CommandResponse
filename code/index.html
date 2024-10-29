@@ -5,39 +5,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
     <title>לומדת המענה הפיקודי</title>
-    <!-- stylesheet links -->
     <link rel="stylesheet" type="text/css" href="index.css">
-    <!-- <link rel="stylesheet" type="text/css" href="indexComp.css" > -->
     <link rel="stylesheet" type="text/css" href="practice.css">
-    <!-- <link rel="stylesheet" type="text/css" href="practiceComp.css"> -->
-    <!-- javascript links -->
     <script type="text/javascript" src="practice.js"></script>
     <script type="text/javascript" src="index.js"></script>
-    <!-- icon -->
     <link rel="shortcut icon" href="../assets/images/grapics/home-page/logo-for-icon.svg">
 </head>
 
 <body>
-    <!-- loader -->
     <div class="loader">
-        <!-- <img src="../assets/images/grapics/home-page/center and mask.gif" alt="Loading..." /> -->
         <img src="../assets/images/grapics/home-page/blackonwhite-ezgif.com-gif-maker.gif" alt="Loading..."/>
         מיד מתחילים...
     </div> 
+
     <div class="open-screen">
-        <!-- <div class="img-screen">
-            <img class="signBahd10" src="../assets/images/grapics/signBahd10.png" alt="signBahd10">
-            <img class="signForce" src="../assets/images/grapics/signForce.png" alt="signForce">
-        </div> -->
         <h1>המענה הפיקודי</h1>
         <p class="text-screen"> המענה הפיקודי הינו מסמך שנועד להבהיר ולפרט דרכי פעולה על פי פקודות הצבא לפיקוד הזוטר
             (מרמת מ"כ עד מ"פ כולל), וכן את הכלים הפיקודיים העומדים לרשותם לשם הכשרתו של החייל והבטחת המשמעת ביחידה.
-            <!-- <p class="text-screen"> בסיום הלומדה תבצע\י מבחן אשר הינו תנאי מחייב לתפיסת כוננות גזרתית.</p> -->
         </p>
         <button class="btnNext">כניסה ללומדה</button>
     </div>
+    
     <!-- opening -->
     <div class="homePage" style="display: none;">
         <div class="titleConeiner">
@@ -45,312 +34,262 @@
             <div class="title">המענה הפיקודי</div>
         </div>
 
-        <img class="topButton searchButton" src="../assets/images/grapics/home-page/search-button.svg"
-            alt="searchButton">
-        <img class="aboutButton " src="../assets/images/grapics/about/about-symbol.svg" alt="about-button">
+        <img class="topButton searchButton" src="../assets/images/grapics/home-page/search-button.svg" alt="searchButton"/>
+        <img class="aboutButton" src="../assets/images/grapics/about/about-symbol.svg" alt="about-button" onclick="onClickAbout(event)"/>
 
-        <div>
-            <!-- search -->
-            <img class="searchBoxHolder hidden" src="../assets/images/grapics/home-page/search-box.svg"
-                alt="about-button">
-            <!-- <input android:windowSoftInputMode="stateVisible" class="searchBox hidden" placeholder="חפשו תרופה באנגלית"
-                name="name" lang="en-US" type="text" />
-            <div class="dropDown"></div> -->
-            <!-- about -->
-            <div class="aboutPage hidden">
-                <div class="aboutHeadline">אודות</div>
-                <div class="sub-titles"> רמ"ד טי"ל:</div>
-                <div> רס"מ שלומי אוגרן</div>
-                <div class="sub-titles">רת"ח מו"פ וחדשנות בלמידה:</div>
-                <div>רס"ל אביב אואנונו</div>
-                <div class="sub-titles">פיתוח:</div>
-                <div>רב"ט ניצן סלומון, טור' אדוה אבא, רב"ט דורון הרפז, רב"ט גילי גורדון</div>
-                <div class="sub-titles">עיצוב:</div>
-                <div>טור' לוטם גרוס</div>
-                <div class="sub-titles">מומחי תוכן:</div>
-                <div>רס"ב אולגה ריידר</div>
-                <div class="sub-titles">גרסה:</div>
-                <div>מרץ 2024</div>
-                <div class="logos">
-                    <img src="../assets/images/grapics/about/mador-till.svg" class="logotill" />
-                    <!-- <img src="../assets/images/grapics/about/bhd10.svg" /> -->
-                </div>
+        <div class="aboutPage hidden">
+            <div class="aboutHeadline">אודות</div>
+            <div class="sub-titles"> רמ"ד טי"ל:</div>
+            <div> רס"מ שלומי אוגרן</div>
+            <div class="sub-titles">רת"ח מו"פ וחדשנות בלמידה:</div>
+            <div>רס"ל אביב אואנונו</div>
+            <div class="sub-titles">פיתוח:</div>
+            <div>רב"ט ניצן סלומון, טור' אדוה אבא, רב"ט דורון הרפז, רב"ט גילי גורדון</div>
+            <div class="sub-titles">עיצוב:</div>
+            <div>טור' לוטם גרוס</div>
+            <div class="sub-titles">מומחי תוכן:</div>
+            <div>רס"ב אולגה ריידר</div>
+            <div class="sub-titles">גרסה:</div>
+            <div>מרץ 2024</div>
+            <div class="logos">
+                <img src="../assets/images/grapics/about/mador-till.svg" class="logotill" />
             </div>
+        </div>
+
             <!-- home-page-button -->
-            <div class="homePageButtons">
-                <div class="homePageButtonsScroll">
-                    <div class="mainPageButton antiallergic blueCard">
-                        זכויות מרכזיות</span>
-                        <!-- <div class = "text-tab">הכנה</div> -->
-                    </div>
-                    <div class="mainPageButton antibiotics orangeCard">
-                        <div class="medHeadline"> איתור סימני מצוקה</div>
-                    </div>
-                    <div class="mainPageButton breathing yellowCard">
-                        <div class="medHeadline">מסדר יציאה</div>
-                    </div>
-                    <div class="mainPageButton digestion blueCard">
-                        תגובה פיקודית</span>
-
-                    </div>
-                    <div class="mainPageButton chronicDiseases pinkCard">
-                        <div class="medHeadline">סיכום</div>
-                    </div>
-                    <br><br>
+        <div class="homePageButtons">
+            <div class="homePageButtonsScroll">
+                <div class="mainPageButton antiallergic blueCard">
+                    <div class="medHeadline"> זכויות מרכזיות </div>
                 </div>
-                <!-- <button onclick="window.location.href='https:/campus.digital.idf.il/course/view.php?id=6356'"
-                    class="testBtn buttons">כניסה למבחן וסיום הלומדה</button> -->
+                <div class="mainPageButton antibiotics orangeCard">
+                    <div class="medHeadline"> איתור סימני מצוקה</div>
+                </div>
+                <div class="mainPageButton breathing yellowCard">
+                    <div class="medHeadline">מסדר יציאה</div>
+                </div>
+                <div class="mainPageButton digestion blueCard">
+                    תגובה פיקודית</span>
+                </div>
+                <div class="mainPageButton chronicDiseases pinkCard">
+                    <div class="medHeadline">סיכום</div>
+                </div>
+                <br>
             </div>
-            <!-- med shelfs -->
-            <div class="medShelfs">
+        </div>
+
+        <div class="medShelfs">
+            <div class="shelfsButtons hidden">
+                <img class="homeButton red" src="../assets/images/grapics/med-shelfs/home-button.svg">
+            </div>
+
                 <!--  זכויות מרכזיות  -->
-                <div class="antiallergicShelf medShelf hidden">
-                    <!-- <img class="medTypeSymbol" src="../assets/images/grapics/home-page/system-uicons--gps.svg"> -->
-
+            <div class="antiallergicShelf medShelf hidden">
                     <!-- מדף 1 -->
-                    <div class="shelfs shelf1">
-                        <div class="shelfHedline">
-                            שעות שינה
-                            <img class="downButton blue" src="../assets/images/grapics/med-shelfs/down-button.svg">
-                        </div>
-                        <img class="shelf blue" src="../assets/images/grapics/med-shelfs/shelf.svg">
+                <br>
+                <div class="shelfs shelf1">
+                    <div class="shelfHedline">
+                        שעות שינה
+                        <img class="downButton blue" src="../assets/images/grapics/med-shelfs/down-button.svg">
                     </div>
-                    <div class="shelf1dropDown shelfsdropDown hidden">
-                        <!-- <div class="sub-titles">מנגנון פעולה</div> -->
-                        <div><span class="bold"> </span><br>
-                            ע"פ פקודות הצבא בטירונות ישנים 7 שעות בכל לילה. שעות השינה אינן כוללות שמירות לילה וזמני
-                            התארגנות. ניתן לפצל שעות שינה לשני משכים בתנאי שניתנות לפחות 4 שעות שינה רצופות. שמירה של עד
-                            שעה בלילה אינה נחשבת כפגיעה בשעות השינה של החייל.
-                        </div>
-                        <br>
+                    <img class="shelf blue" src="../assets/images/grapics/med-shelfs/shelf.svg">
+                </div>
+                <div class="shelf1dropDown shelfsdropDown hidden">
+                    <div class="introdText"><span class="bold"> </span><br>
+                        ע"פ פקודות הצבא בטירונות ישנים 7 שעות בכל לילה. שעות השינה אינן כוללות שמירות לילה וזמני
+                        התארגנות. ניתן לפצל שעות שינה לשני משכים בתנאי שניתנות לפחות 4 שעות שינה רצופות. שמירה של עד
+                        שעה בלילה אינה נחשבת כפגיעה בשעות השינה של החייל.
+                    </div>
+                    <br>
 
-                    </div>
+                </div>
                     <!-- מדף 2 -->
-                    <div class="shelfs shelf2">
-                        <div class="shelfHedline">
-                            טלפון
-                            <img class="downButton pink" src="../assets/images/grapics/med-shelfs/down-button.svg">
-                        </div>
-                        <img class="shelf pink" src="../assets/images/grapics/med-shelfs/shelf.svg">
+                <div class="shelfs shelf2">
+                    <div class="shelfHedline">
+                        טלפון
+                        <img class="downButton pink" src="../assets/images/grapics/med-shelfs/down-button.svg">
                     </div>
-                    <div class="shelf2dropDown shelfsdropDown hidden">
-                        <!-- <div class="sub-titles">מנגנון פעולה</div> -->
-                        <div><span class="bold"> </span><br>
-                            <p class="introdText"> יש לאפשר לחיילים להתקשר לפחות פעמיים בשבוע.
-                            </p>
-                            <span class="bold"> </span>
-                        </div>
-                        <!-- <div class="shelfPicSection">
-                            <div class="shelfMedPicContainer ">
-                                1. כח אדם - חובשים, מטפלים בכירים, נהג אמבולנס.
-                            </div>
-                            <div class="shelfMedPicContainer">
-                                2. אימונים.
-                            </div>
-                            <div class="shelfMedPicContainer">
-                                3. ציוד רפואי:
-                                <h4 style="margin: 0;">מסגרת סדירה:</h4>
-                                <p style="margin: 0;">כשירות מלאה</p>
-                                <h4 style="margin: 0;">מסגרת מילואים:</h4>
-                                <p style="margin: 0;">סטטוס תיאום משיכה</p>
-                            </div>
-                            <div class="shelfMedPicContainer">
-                                4. אמבולנס:
-                                <h4 style="margin: 0;">במסגרת סדירה</h4>
-                                <p style="margin: 0;">אמבולנס אורגני - כשירות ותקינות.</p>
-                                <h4 style="margin: 0;">במסגרת מילואים</h4>
-                                <p style="margin: 0;">בעל רישיון מתאים לכלי הגזרתי.</p>
-                            </div>
-                        </div> -->
+                    <img class="shelf pink" src="../assets/images/grapics/med-shelfs/shelf.svg">
+                </div>
+                
+                <div class="shelf2dropDown shelfsdropDown hidden">
+                    <div><span class="bold"> </span><br>
+                        <p class="introdText"> יש לאפשר לחיילים להתקשר לפחות פעמיים בשבוע.
+                        </p>
+                        <span class="bold"> </span>
                     </div>
-                    <!-- מדף 3 -->
-                    <div class="shelfs shelf3">
-                        <div class="shelfHedline">
-                            זמן שק"ם
-                            <img class="downButton pink" src="../assets/images/grapics/med-shelfs/down-button.svg">
-                        </div>
-                        <img class="shelf pink" src="../assets/images/grapics/med-shelfs/shelf.svg">
-                    </div>
-                    <div class="shelf3dropDown shelfsdropDown hidden">
-                        <div><span class="bold"> </span><br>
-                            <p class="introdText"> זהו זמן לקנות דברים בשק"ם והוא יינתן לפחות פעמיים בשבוע, חוץ מבסדנת
-                                שטח אשר בה ינתן שק"ם פעם אחת בשבוע (אין לתת לחייל זמן קניות במרכז כתחליף לזמן שק"ם).
-                            </p>
-                            <span class="bold"> </span>
-                        </div>
+                </div>
 
+                <div class="shelfs shelf3">
+                    <div class="shelfHedline">
+                        זמן שק"ם
+                        <img class="downButton pink" src="../assets/images/grapics/med-shelfs/down-button.svg">
                     </div>
-                    <div class="shelfs shelf4">
-                        <div class="shelfHedline">
-                            נפקדות
-                            <img class="downButton pink" src="../assets/images/grapics/med-shelfs/down-button.svg">
-                        </div>
-                        <img class="shelf pink" src="../assets/images/grapics/med-shelfs/shelf.svg">
-                    </div>
-                    <div class="shelf4dropDown shelfsdropDown hidden">
-                        <div><span class="bold"> </span><br>
-                            <p class="introdText"> בכל היעדרות מלו"ז ללא אישור מפקדים בין בבסיס או מחוצה לו, חייל נחשב
-                                כנפקד. כאשר חייל נפקד הוא אינו זכאי לטיפול ולזכויותיו כחייל (טיפול רפואי, ת"ש וכד').
-                                לאחר 48 שעות החייל יפסיק לקבל משכורת. לאחר 21 יום חייל נפקד יחשב לעריק והדבר עלול להירשם
-                                לו כעבירה פלילית.
-                            </p>
-                            <span class="bold"> </span>
-                        </div>
+                    <img class="shelf pink" src="../assets/images/grapics/med-shelfs/shelf.svg">
+                </div>
 
+                <div class="shelf3dropDown shelfsdropDown hidden">
+                    <div><span class="bold"> </span><br>
+                        <p class="introdText"> זהו זמן לקנות דברים בשק"ם והוא יינתן לפחות פעמיים בשבוע, חוץ מבסדנת
+                            שטח אשר בה ינתן שק"ם פעם אחת בשבוע (אין לתת לחייל זמן קניות במרכז כתחליף לזמן שק"ם).
+                        </p>
+                        <span class="bold"> </span>
                     </div>
-                    <div class="shelfs shelf5">
-                        <div class="shelfHedline">
-                            תיבת פניות למפקד
-                            <img class="downButton pink" src="../assets/images/grapics/med-shelfs/down-button.svg">
+                </div>
+
+                <div class="shelfs shelf4">
+                    <div class="shelfHedline">
+                        נפקדות
+                        <img class="downButton pink" src="../assets/images/grapics/med-shelfs/down-button.svg">
+                    </div>
+                    <img class="shelf pink" src="../assets/images/grapics/med-shelfs/shelf.svg">
+                </div>
+                <div class="shelf4dropDown shelfsdropDown hidden">
+                    <div><span class="bold"> </span><br>
+                        <p class="introdText"> בכל היעדרות מלו"ז ללא אישור מפקדים בין בבסיס או מחוצה לו, חייל נחשב
+                            כנפקד. כאשר חייל נפקד הוא אינו זכאי לטיפול ולזכויותיו כחייל (טיפול רפואי, ת"ש וכד').
+                            לאחר 48 שעות החייל יפסיק לקבל משכורת. לאחר 21 יום חייל נפקד יחשב לעריק והדבר עלול להירשם
+                            לו כעבירה פלילית.
+                        </p>
+                        <span class="bold"> </span>
+                    </div>
+                </div>
+                
+                <div class="shelfs shelf5">
+                    <div class="shelfHedline">
+                        תיבת פניות למפקד
+                        <img class="downButton pink" src="../assets/images/grapics/med-shelfs/down-button.svg">
+                    </div>
+                    <img class="shelf pink" src="../assets/images/grapics/med-shelfs/shelf.svg">
+                </div>
+                <div class="shelf5dropDown shelfsdropDown hidden">
+                    <div class="shelfPicSection ">
+                        <div class="shelfMedPicContainer">
+                            1. לכל מפקד מרמת המ"פ ומעלה תוצב תיבת פניות בסמוך למשרדו, אשר תיפתח פעם ביום לפחות.
                         </div>
-                        <img class="shelf pink" src="../assets/images/grapics/med-shelfs/shelf.svg">
-                    </div>
-                    <div class="shelf5dropDown shelfsdropDown hidden">
-                        <div class="shelfPicSection ">
-                            <div class="shelfMedPicContainer">
-                                1. לכל מפקד מרמת המ"פ ומעלה תוצב תיבת פניות בסמוך למשרדו, אשר תיפתח פעם ביום לפחות.
-
-                            </div>
-
-                            <div class="shelfMedPicContainer">
-                                2. המפקד יתייחס לפניות שבתיבה בכל דרך שימצא לנכון 48 שעות מרגע פתיחת התיבה.
-
-                            </div>
-                            <div class="shelfMedPicContainer">
-                                3. כל פניה יש לתייק וכן את דרך הטיפול בה.
-
-                            </div>
-
+                        <div class="shelfMedPicContainer">
+                            2. המפקד יתייחס לפניות שבתיבה בכל דרך שימצא לנכון 48 שעות מרגע פתיחת התיבה.
                         </div>
-                    </div>
-                    <div class="shelfs shelf6">
-                        <div class="shelfHedline">
-                            מזון
-                            <img class="downButton pink" src="../assets/images/grapics/med-shelfs/down-button.svg">
-                        </div>
-                        <img class="shelf pink" src="../assets/images/grapics/med-shelfs/shelf.svg">
-                    </div>
-                    <div class="shelf6dropDown shelfsdropDown hidden">
-                        <div><span class="bold"> </span><br>
-                            <p class="introdText"> כל חייל זכאי לשלוש ארוחות עיקריות ביום, מתוכן ארוחה אחת חמה. בנוסף
-                                ישנן 2 ארוחות ביניים (פריסות) במהלך היום, ועוד 1 שמתחברת לט"ש. (במידה והזמן בין הארוחות
-                                קצר מ4 שעות רשאי מ"פ לבטל את ארוחת הביניים).
-                            </p>
-                            <span class="bold"> יש לחייב את החיילים לרחוץ ידיים לפני כל ארוחה. </span>
-                        </div>
-                        <!-- <div class="shelfPicSection ">
-                            <div class="shelfMedPicContainer">1.
-                                נהלי בדיקת כשירות לעצור- הצגת מערכת האקילה (בגזרות הרלוונטיות).
-                            </div>
-                            <div class="shelfMedPicContainer">2.
-                                מענה ברפואת שגרה- הכרת האמצעים במרפאה, מערכת CPR , CPR-GO.
-                            </div>
-                            <div class="shelfMedPicContainer">3.
-                                ברה"צ- תברואת מזון ובעלי חיים - דגשים לטיפול באירוע מסוג זה.
-                            </div>
-                        </div> -->
-                    </div>
-
-                    <div class="shelfs shelf7">
-                        <div class="shelfHedline">
-                            איסור דיבור
-                            <img class="downButton pink" src="../assets/images/grapics/med-shelfs/down-button.svg">
-                        </div>
-                        <img class="shelf pink" src="../assets/images/grapics/med-shelfs/shelf.svg">
-                    </div>
-                    <div class="shelf7dropDown shelfsdropDown hidden">
-                        <div><span class="bold"> </span><br>
-                            <p class="introdText"> חל איסור למנוע מחיילים מלשוחח עם גורמים בבסיס. כמו כן, חל איסור למנוע
-                                מחיילים מלשוחח בינם לבין עצמם בחדר אוכל, שק"ם או כל מקום ציבורי בו אינם חלק משיעור או
-                                אימון.
-                            </p>
+                        <div class="shelfMedPicContainer">
+                            3. כל פניה יש לתייק וכן את דרך הטיפול בה.
                         </div>
                     </div>
+                </div>
 
-                    <div class="shelfs shelf8">
-                        <div class="shelfHedline">
-                            ארוחות
-                            <img class="downButton pink" src="../assets/images/grapics/med-shelfs/down-button.svg">
-                        </div>
-                        <img class="shelf pink" src="../assets/images/grapics/med-shelfs/shelf.svg">
+                <div class="shelfs shelf6">
+                    <div class="shelfHedline">
+                        מזון
+                        <img class="downButton pink" src="../assets/images/grapics/med-shelfs/down-button.svg">
                     </div>
-                    <div class="shelf8dropDown shelfsdropDown hidden">
-                        <div class="shelfPicSection ">
-                            <div class="shelfMedPicContainer">1.
-                                ארוחת בוקר - 30 דקות
-                            </div>
-                            <div class="shelfMedPicContainer">2.
-                                ארוחת צהריים - 60 דקות
-                            </div>
-                            <div class="shelfMedPicContainer">3.
-                                ארוחת ערב - 45 דקות
-                            </div>
+                    <img class="shelf pink" src="../assets/images/grapics/med-shelfs/shelf.svg">
+                </div>
+                
+                <div class="shelf6dropDown shelfsdropDown hidden">
+                    <div><span class="bold"> </span><br>
+                        <p class="introdText"> כל חייל זכאי לשלוש ארוחות עיקריות ביום, מתוכן ארוחה אחת חמה. בנוסף
+                            ישנן 2 ארוחות ביניים (פריסות) במהלך היום, ועוד 1 שמתחברת לט"ש. (במידה והזמן בין הארוחות
+                            קצר מ4 שעות רשאי מ"פ לבטל את ארוחת הביניים).
+                        </p>
+                        <span class="introdText"> יש לחייב את החיילים לרחוץ ידיים לפני כל ארוחה. </span>
+                    </div>
+                </div>
+
+                <div class="shelfs shelf7">
+                    <div class="shelfHedline">
+                        איסור דיבור
+                        <img class="downButton pink" src="../assets/images/grapics/med-shelfs/down-button.svg">
+                    </div>
+                    <img class="shelf pink" src="../assets/images/grapics/med-shelfs/shelf.svg">
+                </div>
+                <div class="shelf7dropDown shelfsdropDown hidden">
+                    <div><span class="bold"> </span><br>
+                        <p class="introdText"> חל איסור למנוע מחיילים מלשוחח עם גורמים בבסיס. כמו כן, חל איסור למנוע
+                            מחיילים מלשוחח בינם לבין עצמם בחדר אוכל, שק"ם או כל מקום ציבורי בו אינם חלק משיעור או
+                            אימון.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="shelfs shelf8">
+                    <div class="shelfHedline">
+                        ארוחות
+                        <img class="downButton pink" src="../assets/images/grapics/med-shelfs/down-button.svg">
+                    </div>
+                    <img class="shelf pink" src="../assets/images/grapics/med-shelfs/shelf.svg">
+                </div>
+                
+                <div class="shelf8dropDown shelfsdropDown hidden">
+                    <div class="shelfPicSection ">
+                        <div class="shelfMedPicContainer">1.
+                            ארוחת בוקר - 30 דקות
+                        </div>
+                        <div class="shelfMedPicContainer">2.
+                            ארוחת צהריים - 60 דקות
+                        </div>
+                        <div class="shelfMedPicContainer">3.
+                            ארוחת ערב - 45 דקות
                         </div>
                     </div>
+                </div>
 
-                    <div class="shelfs shelf9">
-                        <div class="shelfHedline">
-                            דת
-                            <img class="downButton pink" src="../assets/images/grapics/med-shelfs/down-button.svg">
-                        </div>
-                        <img class="shelf pink" src="../assets/images/grapics/med-shelfs/shelf.svg">
+                <div class="shelfs shelf9">
+                    <div class="shelfHedline">
+                        דת
+                        <img class="downButton pink" src="../assets/images/grapics/med-shelfs/down-button.svg">
                     </div>
-                    <div class="shelf9dropDown shelfsdropDown hidden">
-                        <div><span class="bold"> </span><br>
-
-                        </div>
-                        <table>
-                            <tr>
-                                <td style="font-size: 1.6rem; text-align: center;">התפילה</td>
-                                <td style="font-size: 1.6rem; text-align: center;">זמני התפילה</td>
-                                <td style="font-size: 1.6rem; text-align: center;">משך התפילה</td>
-                            </tr>
-                            <tr>
-                                <td class="name-table">שחרית</td>
-                                <td class="td-tabel">
-                                    <br>בין שעות זריחת השמש עד לשעה 9:00 אך בכל מקרה לפני כל פעילות
-                                    <br>
-                                    <br>
-
-                                </td>
-                                <td class="td-tabel">
-                                    <br>יום חול: 40 דקות<br>
-                                    <br>שני וחמישי: 50 דקות<br>
-                                    <br>ראש חודש: שעה<br>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="name-table">מנחה</td>
-                                <td class="td-tabel">
-                                    <br> בהתאם להוראת רב היחידה- עד שקיעת החמה.
-                                    <br>
-                                    <br>
-
-                                </td>
-                                <td class="td-tabel">15 דקות
-                                    <br>
-                                    <br>
-
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="name-table">ערבית</td>
-                                <td class="td-tabel">
-                                    <br> מחצי שעה אחרי שקיעת החמה עד 23:30.
-                                    <br>
-                                    <br>
-                                </td>
-                                <td class="td-tabel">15 דקות </td>
-                            </tr>
-                        </table>
-                        <br><br>
-                    </div>
+                    <img class="shelf pink" src="../assets/images/grapics/med-shelfs/shelf.svg">
+                    <br>
+                </div>
+                <br><br>
+                <div class="shelf9dropDown shelfsdropDown hidden">
+                    <table class="introdText">
+                        <tr>
+                            <td style="font-size: 1.6rem; text-align: center;">התפילה</td>
+                            <td style="font-size: 1.6rem; text-align: center;">זמני התפילה</td>
+                            <td style="font-size: 1.6rem; text-align: center;">משך התפילה</td>
+                        </tr>
+                        <tr>
+                            <td class="name-table">שחרית</td>
+                            <td class="td-tabel">
+                                <br>בין שעות זריחת השמש עד לשעה 9:00 אך בכל מקרה לפני כל פעילות
+                                <br>
+                                <br>
+                            </td>
+                            <td class="td-tabel">
+                                <br>יום חול: 40 דקות<br>
+                                <br>שני וחמישי: 50 דקות<br>
+                                <br>ראש חודש: שעה<br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="name-table">מנחה</td>
+                            <td class="td-tabel">
+                                <br> בהתאם להוראת רב היחידה- עד שקיעת החמה.
+                                <br>
+                                <br>
+                            </td>
+                            <td class="td-tabel">15 דקות
+                                <br>
+                                <br>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="name-table">ערבית</td>
+                            <td class="td-tabel">
+                                <br> מחצי שעה אחרי שקיעת החמה עד 23:30.
+                                <br>
+                                <br>
+                            </td>
+                            <td class="td-tabel">15 דקות </td>
+                        </tr>
+                    </table>
                     <br><br>
                 </div>
-             
+                <br><br>
 
+               </div> 
                 <!-- איתור סימני מצוקה -->
-                 <br><br>
+               <br>
                 <div class="antibioticsShelf medShelf hidden">
                     <!-- מדף 1 -->
                     <div class="shelfs shelf1">
@@ -401,21 +340,17 @@
                         </div>
 
                     </div>
+                    <br>               
+                    <br>
                 </div>
 
             </div>
             <!-- מסדר יציאה -->
             <div class="breathingShelf medShelf hidden">
-                <div>
-                    <p class="introdText shelfPicSection" style=" line-height: 3em;  padding: 5%;
-                    "> באחריות המפקדים לבצע ביקורת הופעת החיילים בטרם
-                        עזיבתם את הבסיס.
-                    </p>
-                    <!-- <span class="bold"> </span> -->
+                <div class="introdText shelfPicSection"> 
+                    באחריות המפקדים לבצע ביקורת הופעת החיילים בטרם עזיבתם את הבסיס.
                 </div>
-
-                <!-- <div class="shelf1dropDown shelfsdropDown hidden"> -->
-                <div><span class="bold"> </span><br>
+                <div>
                     <p class="introdText">
                         <b> לפני כל יציאה יש לתדרך את החיילים בנושאים הבאים:</b>
                     </p>
@@ -423,53 +358,49 @@
                 </div>
 
                 <div class="shelf1dropDown shelfsdropDown ">
-
-                <div class="shelfPicSection ">
-                    <div class="shelfMedPicContainer">1.
-                        טרמפים
-                    </div>
-                    <div class="shelfMedPicContainer">2.
-                        נהלי נשיאת נשק
-                    </div>
-                    <div class="shelfMedPicContainer">3.
-                        נהלי התנהגות בהינתן אירוע תקיפה ו/או ניסיון חטיפה
-                    </div>
-                    <div class="shelfMedPicContainer">4.
-                        בטיחות בדרכים
-                    </div>
-                    <div class="shelfMedPicContainer">5.
-                        אלכוהול וסמים
-                    </div>
-                    <div class="shelfMedPicContainer">6.
-                        ייצוגיות - כללי התנהגות
-                    </div>
-                    <div class="shelfMedPicContainer">7.
-                        נכס לאומי: השיטה השקטה והשיטה הרועשת, קשר עם הבית וכו'
-                    </div>
-                    <div class="shelfMedPicContainer">8.
-                        בטחון מידע (לא מדברים על תכני הקורס, לו"זים וכו' מחוץ לבסיס)
-                    </div>
-                    <div class="shelfMedPicContainer">9.
-                        חזרה מהחופשה- לאן, מתי ואיך
-                    </div>
-                    <div class="shelfMedPicContainer">10.
-                        טלפונים לקשר
+                    <div class="shelfPicSection ">
+                        <div class="shelfMedPicContainer">1.
+                            טרמפים
+                        </div>
+                        <div class="shelfMedPicContainer">2.
+                            נהלי נשיאת נשק
+                        </div>
+                        <div class="shelfMedPicContainer">3.
+                            נהלי התנהגות בהינתן אירוע תקיפה ו/או ניסיון חטיפה
+                        </div>
+                        <div class="shelfMedPicContainer">4.
+                            בטיחות בדרכים
+                        </div>
+                        <div class="shelfMedPicContainer">5.
+                            אלכוהול וסמים
+                        </div>
+                        <div class="shelfMedPicContainer">6.
+                            ייצוגיות - כללי התנהגות
+                        </div>
+                        <div class="shelfMedPicContainer">7.
+                            נכס לאומי: השיטה השקטה והשיטה הרועשת, קשר עם הבית וכו'
+                        </div>
+                        <div class="shelfMedPicContainer">8.
+                            בטחון מידע (לא מדברים על תכני הקורס, לו"זים וכו' מחוץ לבסיס)
+                        </div>
+                        <div class="shelfMedPicContainer">9.
+                            חזרה מהחופשה- לאן, מתי ואיך
+                        </div>
+                        <div class="shelfMedPicContainer">10.
+                            טלפונים לקשר
+                        </div>
                     </div>
                 </div>
-            </div>
-                <br><br>
-
-                <!-- </div> -->
+                <br><br><br>
             </div>
 
 
             <!-- תגובה פיקודית -->
             <div class="digestionShelf medShelf hidden">
-                <div><span class="bold"> </span><br>
-                    <p class="introdText" style="font-weight:700;"> תגובה פיקודית היא חלק מתהליך חינוכי שנועד להקנות
+                <div>
+                    <p class="introdText"> תגובה פיקודית היא חלק מתהליך חינוכי שנועד להקנות
                         לחייל הרגלי משמעת ולעצב את התנהגותו בהתאם לנורמות ולערכים
                     </p>
-                    <span class="bold"> </span>
                 </div>
                 <div class="shelfs shelf1">
                     <div class="shelfHedline">
@@ -531,185 +462,182 @@
 
                 </div>
 
-                <div><span class="bold"> </span><br>
-                    <p class="introdText" style="font-weight:700;"> דרכי פעולה:
-                    </p>
-                    <span class="bold"> </span>
-                </div>
-
-                <!-- מדף 2 -->
-                <div class="shelfs shelf3">
-                    <div class="shelfHedline">
-                        תגמול
-                        <img class="downButton blue" src="../assets/images/grapics/med-shelfs/down-button.svg">
-                    </div>
-                    <img class="shelf blue" src="../assets/images/grapics/med-shelfs/shelf.svg">
-                </div>
-
-                <div class="shelf3dropDown shelfsdropDown hidden">
-                    <!-- <p class="impText">המט"ב צריך לקחת חלק פעיל בהחזרת הנפח – השגת גישה למחזור הדם, וידוא הכנת פלזמה
-                            וכו', ולא רק בהחלטה על הצורך בו.</p> -->
-                    <p class="introdText"> תגובות אפשריות (חיוביות ושליליות) אשר בסמכות המפקד/ת לתת לפקודים:
-                    </p>
-
-                    <table>
-                        <tr>
-
-                            <td style="font-size: 1.2rem; text-align: center;"> <b> תגמול אפשרי (תגובה חיובית) </b>
-                            </td>
-                            <td style="font-size: 1.2rem; text-align: center;"> <b> תגובה פיקודית (שלילית) </b> </td>
-                        </tr>
-
-                        <tr>
-                            <td class="td-tabel">
-                                פרגון לחייל/ת על התנהגות טובה
-                            </td>
-                            <td class="td-tabel"> הערה לחייל/ת תוך הזמנתו/ה לשיחה בפני המפקד עצמו או מפקד בכיר ממנו
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td class="td-tabel">
-                                צל"ש של החייל בפני היחידה באופן מילולי/ פרסום בפקודות השגרה
-                            </td>
-                            <td class="td-tabel"> קיום שיחה יחידתית בה יצביע המפקד על הפסול שבמעשה, והכול תוך שמירה על
-                                כבוד החייל המעורב </td>
-                        </tr>
-
-                        <tr>
-                            <td class="td-tabel">
-                                קידום לתפקיד מעניין / בעל אתגר לחייל שביצועיו היו ראויים לציון לטובה
-                            </td>
-                            <td class="td-tabel"> שלילת משימה מעניינת / אי הטלתה מלכתחילה </td>
-                        </tr>
-
-                        <tr>
-                            <td class="td-tabel">
-                                שעת ט"ש מוקדמת או תוספת לשעת ט"ש, הפסקה ארוכה יותר
-                            </td>
-                            <td class="td-tabel"> נתינת זמן הפסקה בדיוק לפי הזכויות ולא יותר מזה </td>
-                        </tr>
-
-                        <tr>
-                            <td class="td-tabel">
-                                חופשת "אפטר"
-                            </td>
-                            <td class="td-tabel"> מניעת "אפטר" או שלילת חופשה </td>
-                        </tr>
-
-                        <tr>
-                            <td class="td-tabel">
-                                יציאה מוקדמת לחופשה
-                            </td>
-                            <td class="td-tabel"> שעות ביציאה </td>
-                        </tr>
-
-                    </table>
-
-                </div>
-
-                <!-- מדף 3 -->
                 <div class="shelfs shelf2">
                     <div class="shelfHedline">
-                        תרגול נוסף
-                        <img class="downButton blue" src="../assets/images/grapics/med-shelfs/down-button.svg">
-                    </div>
-                    <img class="shelf blue" src="../assets/images/grapics/med-shelfs/shelf.svg">
-                </div>
-                <div class="shelf2dropDown shelfsdropDown hidden">
-                    <!-- <p class="impText">מוות בר מניעה נגרם בראש ובראשונה מדימום.</p> -->
-
-                    <p class="introdText"> מפקד מוסמך להטיל תרגול נוסף על כל חייל הכפוף לו בשרשרת הפיקוד.
-                        <br> מטרת התרגול הנוסף היא הקניית הידע והמיומנות לביצוע משימות ופיתוח תכונות ציות, דייקנות
-                        ומשמעת על מנת ליצור רף ביצוע גבוה.
-                    </p>
-
-                    <div class="shelfPicSection">
-                        <div class="shelfMedPicContainer buttonText mahaz ">
-                            דגשים
-                        </div>
-                        <div class="shelfMedPicContainer buttonText medic">
-                            סמכויות מתרגלות ומאשרות
-                        </div>
-                        <div class="shelfMedPicContainer buttonText matab">
-                            מאמץ פיזי מבוקר
-                        </div>
-                        <div class="shelfMedPicContainer buttonText conversions">
-                            תורנויות
-                        </div>
-
-                        <div class="shelfMedPicContainer buttonText conversions">
-                            הצמדה
-                        </div>
-                    </div>
-
-                </div>
-
-
-
-                <!-- מדף 4 -->
-                <div class="shelfs shelf4">
-                    <div class="shelfHedline">
-                        שלילת חופשה
+                        דרכי פעולה
                         <img class="downButton blue" src="../assets/images/grapics/med-shelfs/down-button.svg">
                     </div>
                     <img class="shelf blue" src="../assets/images/grapics/med-shelfs/shelf.svg">
                 </div>
 
-                <div class="shelf4dropDown shelfsdropDown hidden">
+                <div class="shelf2dropDown shelfsdropDown hidden"> 
+                    <div id="hi" class="waysShelf shown">
+                        <!-- מדף 2 -->
+                        <div class="shelfB">
+                            <div class="shelfHedlineInner">
+                                תגמול
+                                <img class="downButtonInner blue" src="../assets/images/grapics/med-shelfs/down-button.svg">
+                            </div>
+                        </div>
 
-                    <div class="shelfPicSection ">
-                        <div class="shelfMedPicContainer buttonText airway">
-                            עיכוב יציאה לחופשה - שעות ביציאה
+                        <div class="shelfBdropDown shelfsdropDown hidden">
+                        
+                            <p class="introdText"> תגובות אפשריות (חיוביות ושליליות) אשר בסמכות המפקד/ת לתת לפקודים:
+                            </p>
+
+                            <table>
+                                <tr>
+
+                                    <td style="font-size: 1.2rem; text-align: center;"> <b> תגמול אפשרי (תגובה חיובית) </b>
+                                    </td>
+                                    <td style="font-size: 1.2rem; text-align: center;"> <b> תגובה פיקודית (שלילית) </b> </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="td-tabel">
+                                        פרגון לחייל/ת על התנהגות טובה
+                                    </td>
+                                    <td class="td-tabel"> הערה לחייל/ת תוך הזמנתו/ה לשיחה בפני המפקד עצמו או מפקד בכיר ממנו
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="td-tabel">
+                                        צל"ש של החייל בפני היחידה באופן מילולי/ פרסום בפקודות השגרה
+                                    </td>
+                                    <td class="td-tabel"> קיום שיחה יחידתית בה יצביע המפקד על הפסול שבמעשה, והכול תוך שמירה על
+                                        כבוד החייל המעורב </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="td-tabel">
+                                        קידום לתפקיד מעניין / בעל אתגר לחייל שביצועיו היו ראויים לציון לטובה
+                                    </td>
+                                    <td class="td-tabel"> שלילת משימה מעניינת / אי הטלתה מלכתחילה </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="td-tabel">
+                                        שעת ט"ש מוקדמת או תוספת לשעת ט"ש, הפסקה ארוכה יותר
+                                    </td>
+                                    <td class="td-tabel"> נתינת זמן הפסקה בדיוק לפי הזכויות ולא יותר מזה </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="td-tabel">
+                                        חופשת "אפטר"
+                                    </td>
+                                    <td class="td-tabel"> מניעת "אפטר" או שלילת חופשה </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="td-tabel">
+                                        יציאה מוקדמת לחופשה
+                                    </td>
+                                    <td class="td-tabel"> שעות ביציאה </td>
+                                </tr>
+
+                            </table>
+
                         </div>
-                        <div class="shelfMedPicContainer buttonText chestDrainage">
-                            חזרה מוקדמת מחופשה
+
+                        <!-- מדף 3 -->
+                        <div class="shelfA">
+                            <div class="shelfHedlineInner">
+                                תרגול נוסף
+                                <img class="downButtonInner blue" src="../assets/images/grapics/med-shelfs/down-button.svg">
+                            </div>
                         </div>
-                        <div class="shelfMedPicContainer buttonText lossSign">
-                            מניעת חופשה
+                        <div class="shelfAdropDown shelfsdropDown hidden">
+
+                            <p class="introdText"> מפקד מוסמך להטיל תרגול נוסף על כל חייל הכפוף לו בשרשרת הפיקוד.
+                                <br> מטרת התרגול הנוסף היא הקניית הידע והמיומנות לביצוע משימות ופיתוח תכונות ציות, דייקנות
+                                ומשמעת על מנת ליצור רף ביצוע גבוה.
+                            </p>
+
+                            <div class="shelfPicSection">
+                                <div class="shelfMedPicContainer buttonText mahaz " onclick="creatMedID(event)">
+                                    דגשים
+                                </div>
+                                <div class="shelfMedPicContainer buttonText medic" onclick="creatMedID(event)">
+                                    סמכויות מתרגלות ומאשרות
+                                </div>
+                                <div class="shelfMedPicContainer buttonText matab" onclick="creatMedID(event)">
+                                    מאמץ פיזי מבוקר
+                                </div>
+                                <div class="shelfMedPicContainer buttonText conversions" onclick="creatMedID(event)">
+                                    תורנויות
+                                </div>
+
+                                <div class="shelfMedPicContainer buttonText conversions" onclick="creatMedID(event)">
+                                    הצמדה
+                                </div>
+                            </div>
+
                         </div>
+
+                        <!-- מדף 4 -->
+                        <div class="shelfC">
+                            <div class="shelfHedlineInner">
+                                שלילת חופשה
+                                <img class="downButtonInner blue" src="../assets/images/grapics/med-shelfs/down-button.svg">
+                            </div>
+                        </div>
+
+                        <div class="shelfCdropDown shelfsdropDown hidden">
+
+                            <div class="shelfPicSection ">
+                                <div class="shelfMedPicContainer buttonText airway" onclick="creatMedID(event)">
+                                    עיכוב יציאה לחופשה - שעות ביציאה
+                                </div>
+                                <div class="shelfMedPicContainer buttonText chestDrainage" onclick="creatMedID(event)">
+                                    חזרה מוקדמת מחופשה
+                                </div>
+                                <div class="shelfMedPicContainer buttonText lossSign" onclick="creatMedID(event)">
+                                    מניעת חופשה
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- מדף 5 -->
+                        <div class="shelfD">
+                            <div class="shelfHedlineInner">
+                                דין משמעתי
+                                <img class="downButtonInner blue" src="../assets/images/grapics/med-shelfs/down-button.svg">
+                            </div>
+                        </div>
+
+                        <div class="shelfDdropDown shelfsdropDown hidden">
+
+                            <div class="div-text">
+                                <br>
+                                דין משמעתי הוא העונש שחייל מקבל לאחר עלייתו למשפט צבאי
+                            </div>
+
+                            <div class="shelfPicSection ">
+                                <div class="shelfMedPicContainer">
+                                    ריתוק
+                                </div>
+                                <div class="shelfMedPicContainer">
+                                    קנס
+                                </div>
+                                <div class="shelfMedPicContainer">
+                                    נזיפה
+                                </div>
+                                <div class="shelfMedPicContainer">
+                                    מחבוש
+                                </div>
+                            </div> 
+                        </div>
+
                     </div>
-
+                    <br><br><br>
+                    </div>
                 </div>
 
-                <!-- מדף 5 -->
-                <div class="shelfs shelf5">
-                    <div class="shelfHedline">
-                        דין משמעתי
-                        <img class="downButton blue" src="../assets/images/grapics/med-shelfs/down-button.svg">
-                    </div>
-                    <img class="shelf blue" src="../assets/images/grapics/med-shelfs/shelf.svg">
-                </div>
-                <div class="shelf5dropDown shelfsdropDown hidden">
-
-                    <div class="div-text">
-                        <br>
-                        דין משמעתי הוא העונש שחייל מקבל לאחר עלייתו למשפט צבאי
-                    </div>
-
-                    <div class="shelfPicSection ">
-                        <div class="shelfMedPicContainer">
-                            ריתוק
-                        </div>
-                        <div class="shelfMedPicContainer">
-                            קנס
-                        </div>
-                        <div class="shelfMedPicContainer">
-                            נזיפה
-                        </div>
-                        <div class="shelfMedPicContainer">
-                            מחבוש
-                        </div>
-
-                    </div>
-
-                </div>
-                <br><br>
-            </div>
-                
                 <!--  סיכום -->
                 <div class="chronicDiseasesShelf medShelf hidden">
-
                     <!-- מדף 1 -->
                     <div class="div-conclustion">
                         <div>
@@ -720,21 +648,11 @@
                             </p>
                             <br>
                             <p class="introdText" style="font-size: 1.15rem"> ~מתוך מסמך תפיסת הטירונות </p>
-                            <span class="bold"> </span>
                         </div>
-                        
                     </div>
                 </div>
+            </div>
 
-                
-            <!-- </div> -->
-            <div class="shelfsButtons hidden">
-                <img class="homeButton red" src="../assets/images/grapics/med-shelfs/home-button.svg">
-                <!-- <img class="practiceButton buttons" src="../assets/images/grapics/med-shelfs/practice-button.svg"> -->
-            </div>
-            <!-- medicine id -->
-            <div class="medicineId">
-            </div>
             <template class="text-type-training">
                 <div class="title"></div>
                 <h1>דגשים!</h1>
@@ -749,13 +667,7 @@
                 <p>נוכחות כלל בעלי התפקידים, השפעה על תכני האימונים בתכנון המקדים, מיקוד בעבודת צוות ובניית אורגניות.
                 </p>
             </template>
-            <!-- <template class="text-medicalEquipment">
-                <div class="title"></div>
-                <h1>מסגרת סדירה</h1>
-                <p>בשירות מלא</p>
-                <h1>מסגרת מילואים</h1>
-                <p>סטטוס תיאום משיכה</p>
-            </template> -->
+
             <template class="imgTemp">
                 <div class="title"></div>
                 <img src="../assets/images/photos/ReportingProcedures.jpg" alt="ReportingProcedures"
@@ -882,24 +794,6 @@
                 <img src="../assets/images/photos/conversions.jpg" alt="conversions" style="width: 100%;">
             </template>
 
-            <!-- <template class="textHighlights">
-                <div class="title"></div>
-                <h2 style="text-align: center;">כשירות לטיפול של כלל הלוחמים:</h2>
-                <ul style="text-align: center; padding: 5% 10%;">
-                    <il>1) מיקום ה-CAT וה- FC בווסט – זהה בין הלוחמים כדי לאפשר גישה מהירה בעת צורך.</il>
-                    <br>
-                    <br>
-                    <il>2) אופן אפסון (אריזה סגורה ושלמה).</il>
-                </ul>
-            </template> -->
-
-            <!-- <template class="ambulance-btn">
-                <div class="title"></div>
-                <h1>במסגרת סדירה</h1>
-                <p>אמבולנס אורגני - כשירות ותקינות.</p>
-                <h1>במסגרת מילואים</h1>
-                <p>בעל רישיון מתאים לכלי הגזרתי.</p>
-            </template> -->
 
             <template class="videoVolumedDevice">
                 <div class="title"></div>
@@ -951,7 +845,6 @@
                 <p style="text-align: center; padding: 12% 10%;"> <b> הקדמת חזרת חייל מחופשה לצורך תחקור עבירה / קיום
                         הליך משמעתי תבוצע באישור מפקד בדרגת סא"ל.</b>
                 </p>
-
             </template>
 
             <template class="textLossSign">

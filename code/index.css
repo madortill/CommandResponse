@@ -7,7 +7,7 @@
 @font-face {
     font-family: segoeu;
     src: url("../assets/fonts/seguisb.ttf");
-    font-weight: 500; 
+    font-weight: 500;
 }
 
 @font-face {
@@ -30,8 +30,7 @@ body {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     overflow: auto;
-    /* background-color: #dfb482; */
-    background-color: rgb(247 241 220);
+    background-color: #dfb482;
 }
 
 /* טוען */
@@ -43,16 +42,10 @@ body {
     width: 100%;
     height: 100%;
     background: black;
-    background: rgb(206, 194, 194);
-    background-color: rgb(247 241 220);
-
-
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #363535c0;
-    /* color: black; */
-
+    color: #f4f4f45d;
     font-size: 2em;
     font-weight: 800;
 }
@@ -62,22 +55,16 @@ body {
     z-index: 2;
     text-align: center;
     font-size: 1.3rem;
-    /* background-color: #dfb17b; */
-    background-color: rgb(247 241 220);
-
+    background-color: #dfb17b;
     width: 100%;
     height: 100%;
-    /* color: white; */
-    color:#dfb482;
-    color: #95744d;
-
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     /* display: none; */
 }
-
 
 .btnNext {
     bottom: 10%;
@@ -87,15 +74,13 @@ body {
     font-family: "segoeu";
     border-radius: 10px;
     color:#dfb482;
-    color: #95744d;
-
     border: none;
     background-color: rgb(255, 255, 255);
     height: 8%;
 }
 
 .text-screen {
-    padding: 15% 10%;
+    padding: 0% 10%;
 }
 
 .loader>img {
@@ -179,15 +164,15 @@ body {
 .wave {
     width: 100%;
     z-index: 1000;
+    
 }
 /* חלק עליון */
 .topButton {
-    width: 18vw;
+    width: 4rem;
     position: absolute;
-    top: 16vh;
-    left: 9vw;
-    
-
+    top: 9rem;
+    left: 2rem;
+    z-index: 10;
 }
 
 .titleConeiner {
@@ -203,17 +188,20 @@ body {
 
 .title {
     position: absolute;
-    top: 2.2rem;
-    font-size: 2rem;
+    top: 1rem;
+    font-size: 2.8rem;
     width: 100vw;
     text-align: center;
     color: white; 
+    font-weight: 400;
     /* z-index: 1000; */
 }
 
 .titleMedShelfs {
-    font-size: 2rem;
-    /* z-index: 1000; */
+    font-size: 2.8rem;
+    text-align: center;
+    color: white; 
+    font-weight: 400;
 }
 
 .titelMedId {
@@ -287,7 +275,7 @@ body {
     position: absolute;
     top: 2vh;
     left: 3vw;
-    z-index: 5;
+    z-index: 1000;
 }
 
 .aboutPage {
@@ -343,36 +331,41 @@ body {
     height: 15vh;
     width: 71vw;
     margin: auto;
-    margin-top: 2em;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
     text-align: center;
     font-weight: 500;
-    font-size: 1.35em;
-    color: #474545;;
+    font-size: 1.5rem;
+    color: #0000009c;;
     display: flex;
     align-items: center;
-    padding-inline: 14%;
-    box-sizing: border-box;
+    justify-content: center;
 }
 
 .blueCard {
     background-image: url("../assets/images/cards/Asset\ 7.svg");
     background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 .orangeCard {
     background-image: url("../assets/images/cards/Asset\ 8.svg");
     background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 
 .yellowCard {
     background-image: url("../assets/images/cards/Asset\ 10.svg");
+    background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 
 .pinkCard {
     background-image: url("../assets/images/cards/Asset\ 11.svg");
+    background-size: 100% 100%;
     background-repeat: no-repeat;
 }
+
 table,
 th,
 td {
@@ -387,7 +380,7 @@ td {
 }
 
 .homePage {
-    margin-top: 10rem;
+    margin-top: 9rem;
 }
 
 .homePageButtonsScroll::-webkit-scrollbar {
@@ -403,7 +396,7 @@ td {
 .td-tabel {
     text-align: center;
     font-size: 1rem;
-    padding: -1% 0%;
+    padding: 0% 0%;
     width: 40%;
 }
 
@@ -493,9 +486,10 @@ td {
 .shelfHedline {
     position: relative;
     text-align: center;
-    font-weight: 500;
-    font-size: 1.2rem;
+    font-weight: 350;
+    font-size: 1.15rem;
     padding-right: 1em;
+    /* color:#dfb17b; */
    
 }
 
@@ -524,8 +518,7 @@ td {
 }
 
 .shelfPicSection {
-    padding-top: 1em ;
-    /* padding: 0 1em; */
+    padding-top: 1em;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
@@ -534,8 +527,6 @@ td {
 }
 
 .medShelf {
-    height: 62vh;
-    /* overflow-y: scroll; */
     margin-top: 0.5em;
 }
 
@@ -569,7 +560,7 @@ td {
     position: absolute;
     right: -15vw;
     bottom: 0vh;
-    z-index: 1000;
+    z-index: 10000;
 }
 
 .introductionText {
@@ -581,7 +572,10 @@ td {
 
 .introdText {
     text-align: center;
+    color:#ffffff;
 }
+
+
 
 .impText {
     padding: 3%;
@@ -604,7 +598,6 @@ td {
     color: rgb(0 0 0);
     background-color: #aaabaa75;
     border-radius: 5px;
-    /* border: 2px solid #aaabaa00; */
     font-weight: 500;
     display: flex;
     align-items: center;
@@ -619,10 +612,8 @@ td {
 
 .buttonText::after {
     content: '👆🏻';
-    /* content: "&#9757;&#127995"; */
     position: absolute;
     bottom: -1rem;
-    /* left: 0; */
     right: 0;
     font-size: 1.5rem;
     transform: rotate(330deg);
@@ -646,15 +637,6 @@ td {
     border-bottom: solid 1.5px #000000;
 }
 
-/* .shelfButton { */
-/* font-weight: 500; */
-/* box-shadow: 5px 5px 11px rgba(0, 0, 0, 0.5), 0px 0px 1px rgb(0 0 0 / 50%); */
-/* color: aliceblue;
-    font-size: 1.1rem;
-    border-radius: 1vw;
-    width: 50%; */
-/*   
-} */
 
 .div-conclustion {
     display: flex;
@@ -730,3 +712,76 @@ table, td, tr {
     padding: 1rem;
 }
 
+
+
+.hidden {
+    display: none;
+}
+
+.shown {
+    display: block;
+}
+
+.waysShelf {
+    background-color: #f8f9fa; /* Light background color */
+    border: 1px solid #dee2e6; /* Border to separate shelves */
+    border-radius: 5px; /* Slightly rounded corners */
+    margin: 10px 0; /* Space between shelves */
+    padding: 10px; /* Inner padding */
+}
+
+.shelfAdropDown, .shelfBdropDown, .shelfCdropDown, .shelfDdropDown {
+    position: absolute; /* Position dropdowns absolutely */
+    top: 100%; /* Align below the shelf */
+    left: 0; /* Align to the left */
+    display: none; /* Initially hidden */
+}
+
+
+
+
+/* Styles for the inner dropdown containers */
+.shelfAdropDown,
+.shelfBdropDown,
+.shelfCdropDown,
+.shelfDdropDown {
+    position: relative; /* Allow for absolute positioning of inner elements */
+    padding: 1rem; /* Add padding for readability */
+    margin-top: 5px; /* Space between dropdown and header */
+    background-color: #e5bd77b7; /* Optional: Light background for dropdown */
+    z-index: 0; /* Ensure dropdowns are above the shelves */
+}
+
+/* Inner shelf header */
+.shelfHedlineInner {
+    cursor: pointer; /* Change cursor to indicate clickable header */
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Space out header text and down button */
+    align-items: center; /* Center align items vertically */
+    padding: 5px; /* Padding for inner header */
+    background-color: #f5dcaab8; /* Optional: Different color for distinction */
+    border: 0.5px solid white;
+    padding: 1rem;
+    z-index: -1;
+}
+
+/* Inner dropdown visibility */
+.hidden {
+    display: none; /* Hide elements with this class */
+}
+
+/* Show dropdown when not hidden */
+.shelfAdropDown:not(.hidden),
+.shelfBdropDown:not(.hidden),
+.shelfCdropDown:not(.hidden),
+.shelfDdropDown:not(.hidden) {
+    display: block; /* Show dropdown */
+}
+
+/* Down button styles */
+.downButton,
+.downButtonInner {
+    width: 20px; /* Adjust width as necessary */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 10px; /* Space between text and button */
+}
