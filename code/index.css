@@ -7,7 +7,7 @@
 @font-face {
     font-family: segoeu;
     src: url("../assets/fonts/seguisb.ttf");
-    font-weight: 500;
+    font-weight: 500; 
 }
 
 @font-face {
@@ -30,7 +30,8 @@ body {
     background-size: 100% 100%;
     background-repeat: no-repeat;
     overflow: auto;
-    background-color: #dfb482;
+    /* background-color: #dfb482; */
+    background-color: rgb(247 241 220);
 }
 
 /* טוען */
@@ -80,7 +81,7 @@ body {
 }
 
 .text-screen {
-    padding: 0% 10%;
+    padding: 15% 10%;
 }
 
 .loader>img {
