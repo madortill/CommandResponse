@@ -34,6 +34,8 @@ body {
     font-size: calc(14px + 0.4vw);
 }
 
+
+
 /* טוען */
 .loader {
     position: fixed;
@@ -81,7 +83,7 @@ body {
 }
 
 .text-screen {
-    padding: 0% 10%;
+    padding: 20% 10%;
 }
 
 .loader>img {
@@ -195,13 +197,14 @@ body {
     color: white; 
     font-weight: 400;
     padding-top: 1rem;
+    color:#FFE6A7;
 }
 
 .titleMedShelfs {
     /* font-size: 2.8rem; */
     text-align: center;
-    color: white; 
     font-weight: 400;
+    color:#FFE6A7;
 }
 
 .titelMedId {
@@ -470,8 +473,8 @@ td {
 .shelfs {
     width: 100vw;
     padding-top: 2rem;
-    padding-bottom: 1.3rem;
-    background-color: white;
+    padding-bottom: 1.4rem;
+    background-color: #fff4d7dc;
     z-index: 1;
     margin-top: 1.5rem;
 }
@@ -484,10 +487,9 @@ td {
 .shelfHedline {
     position: relative;
     text-align: center;
-    font-weight: 350;
-    font-size: 1.15rem;
-    padding-right: 1em;
-    /* color:#dfb17b; */
+    font-weight: 450;
+    font-size: 1.3rem;
+    color: #432818;
    
 }
 
