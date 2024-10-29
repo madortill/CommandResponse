@@ -41,23 +41,23 @@ let objMedInfo = {
 
 
     "mahaz": {
-        name: 'מח"צ ',
+        name: 'דגשים ',
         type: "videoAndImgMahz",
     },
     "medic": {
-        name: 'חובש',
+        name: 'סמכויות מתרגלות ומאשרות',
         type: "videoMedic",
     },
     "matab": {
-        name: 'מט"ב',
+        name: 'מאמץ פיזי מבוקר',
         type: "videoMatab",
     },
     "conversions": {
-        name: 'המרות',
+        name: 'תורנויות',
         type: "videoAndImgConversions",
     },
     "volumedDevice": {
-        name: 'נפח במכשיר',
+        name: 'הצמדה',
         type: "videoVolumedDevice",
     },
     "plasmaPreparation": {
