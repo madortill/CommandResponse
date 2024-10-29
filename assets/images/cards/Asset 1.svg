@@ -4,9 +4,9 @@
     <style>
       .cls-1 {
         fill: #9bcff6;
-        fill: #5693c1;
+        fill: #432818;
       
-        fill: hsl(200.42deg 100% 28.24%);
+        
       }
     </style>
   </defs>

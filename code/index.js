@@ -361,10 +361,12 @@ const creatMedShelfs = (event) => {
     QUESTIONS = shuffle(DATA[strCurrentMedType]["questionsPractice"]);
     // משנה צבע מדפים ושם מאזין לפתיחה שלהם
     for (let i = 1; i <= objMedsShelfsColors[strCurrentMedType][1]; i++) {
+        if (!(strCurrentMedType === 'breathing' || strCurrentMedType === "chronicDiseases")) {
         document.querySelector(`.${strCurrentMedType}Shelf > .shelf${i}`).addEventListener("click", controlShelfsDropDown)
         document.querySelector(`.${strCurrentMedType}Shelf .shelf${i} .downButton`).classList.add(objMedsShelfsColors[strCurrentMedType][0]);
         document.querySelector(`.${strCurrentMedType}Shelf .shelf${i} .shelf`).classList.add(objMedsShelfsColors[strCurrentMedType][0]);
     }
+   }
     bSearchScreen = false;
 }
 

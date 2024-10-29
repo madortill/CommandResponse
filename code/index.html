@@ -41,14 +41,10 @@
             <div class="aboutHeadline">אודות</div>
             <div class="sub-titles"> רמ"ד טי"ל:</div>
             <div> רס"מ שלומי אוגרן</div>
-            <div class="sub-titles">רת"ח מו"פ וחדשנות בלמידה:</div>
-            <div>רס"ל אביב אואנונו</div>
             <div class="sub-titles">פיתוח:</div>
             <div>רב"ט ניצן סלומון, טור' אדוה אבא, רב"ט דורון הרפז, רב"ט גילי גורדון</div>
             <div class="sub-titles">עיצוב:</div>
             <div>טור' לוטם גרוס</div>
-            <div class="sub-titles">מומחי תוכן:</div>
-            <div>רס"ב אולגה ריידר</div>
             <div class="sub-titles">גרסה:</div>
             <div>מרץ 2024</div>
             <div class="logos">
@@ -569,7 +565,7 @@
                                     תורנויות
                                 </div>
 
-                                <div class="shelfMedPicContainer buttonText conversions" onclick="creatMedID(event)">
+                                <div class="shelfMedPicContainer buttonText volumedDevice" onclick="creatMedID(event)">
                                     הצמדה
                                 </div>
                             </div>
@@ -731,7 +727,6 @@
             </template>
 
             <template class="usersVideo">
-                <div class="title"></div>
                 <iframe width="350" height="315" src="https://www.youtube.com/embed/4uxjeMPCCVQ?si=3fgsp7bwQnVCQp8n"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -739,24 +734,23 @@
             </template>
 
             <template class="videoAndImgMahz">
-                <div class="title">  </div>
                 <div class="shelfPicSection ">
-                    <div class="shelfMedPicContainer">
+                    <div class="shelfMedPicContainer innerText">
                         תרגול נוסף יתבצע אך ורק לתחום בו התגלה ליקוי, ובהתאם לידיעתו/ כושרו/ הרגלו של החייל.
                     </div>
-                    <div class="shelfMedPicContainer">
+                    <div class="shelfMedPicContainer innerText">
                         מפקד רשאי להטיל על חייל תרגול נוסף של כל נושא או עניין, הנדרשים למילוי תפקידו.
                     </div>
-                    <div class="shelfMedPicContainer">
+                    <div class="shelfMedPicContainer innerText">
                         תרגול נוסף יוטל רק על חיילים הנזקקים לתרגול נוסף ולא כעונש קולקטיבי על כל הצוות/ המחלקה.
                     </div>
-                    <div class="shelfMedPicContainer">
+                    <div class="shelfMedPicContainer innerText">
                         יש להקפיד כי משך ביצוע התרגול הנוסף לא יעלה על חצי שעה ברציפות.
                     </div>
-                    <div class="shelfMedPicContainer">
+                    <div class="shelfMedPicContainer innerText">
                         לא יוטל תרגול נוסף אשר מטרתו העיקרית היא ענישת החייל.
                     </div>
-                    <div class="shelfMedPicContainer">
+                    <div class="shelfMedPicContainer innerText">
                         תרגול נוסף לאחר השעה 22:00 יתבצע אך ורק באישור מפקד בדרגת סרן (מ"פ במערך מגל), בכל מקרה תושלמנה שעות השינה ויינתנו זמני התארגנות.
                     </div>
                 </div> 
@@ -765,37 +759,37 @@
             <template class="videoMedic">
                 <br><br>
 
-                <table class="introdText">
+                <table class="innerText">
                     <tr>
-                        <td style="font-size: 1.6rem; text-align: center;">כמות חיילים</td>
-                        <td style="font-size: 1.6rem; text-align: center;">סמכות מתרגלת</td>
-                        <td style="font-size: 1.6rem; text-align: center;">סמכות מאשרת</td>
+                        <th>תרגיל</th>
+                        <th>חיילים</th>
+                        <th>חיילות</th>
                     </tr>
                     <tr>
-                        <td class="name-table">תרגול נוסף לחייל/ צוות (עד 15 חיילים)</td>
-                        <td class="name-table">
+                        <td>תרגול נוסף לחייל/ צוות (עד 15 חיילים)</td>
+                        <td>
                             מ"כ, סמל
                             
                         </td>
-                        <td class="name-table">
+                        <td>
                             מ"מ
                         </td>
                     </tr>
                     <tr>
-                        <td class="name-table">תרגול נוסף מחלקתי</td>
-                        <td class="name-table">
+                        <td>תרגול נוסף מחלקתי</td>
+                        <td>
                            סמל / מ"מ
                            
                         </td>
-                        <td class="name-table">מ"מ, יידוע מ"פ
+                        <td>מ"מ, יידוע מ"פ
                         </td>
                     </tr>
                     <tr>
-                        <td class="name-table">תרגול נוסף פלוגתי</td>
-                        <td class="name-table">
+                        <td>תרגול נוסף פלוגתי</td>
+                        <td>
                             מ"פ, רס"פ, מ"מ
                         </td>
-                        <td class="name-table">מ"פ, יידוע מפקד יחידה</td>
+                        <td>מ"פ, יידוע מפקד יחידה</td>
                     </tr>
                 </table>
 
@@ -803,26 +797,62 @@
             </template>
 
             <template class="protocolHref">
-                <div class="title"></div>
                 <a href="../assets/images/פרק 5- החייאת בקרת נזקים בשדה.pdf"
                     style="display: block; margin: 0 auto; text-align: center;" target="_blank">פרוטוקול RDCR </a>
             </template>
-
             <template class="videoMatab">
-                <div class="title"></div>
-                <p class="mahaz-div">קטטר פולי 26F</p>
-                <iframe width="350" height="315" src="https://www.youtube.com/embed/NrIXIXHMjxU?si=nZ6j6loR18Acpnnj"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
-            </template>
+                <div class="innerText">
+                 מפקד יהיה רשאי להטיל פעולות של מאמץ גופני מבוקר על חייל כפעולה של תרגול נוסף בהתאם להנחיות המענה הפיקודי.
+                </div>
+                <div class="innerText">
+                 מפקד המבקש להטיל מאמץ גופני מבוקר יוודא כי מצבו הגופני של החייל מאפשר את הטלתו, תוך הקפדה על בריאותו של החייל, ובכלל זה יבחן קיומן של מגבלות רפואיות, תנאי מזג אויר ועומס חום/קור.
+                </div>
+                <div class="innerText">
+                 ניתן להטיל מאמץ גופני מבוקר כתרגול נוסף בהיקף של עד לשלושה סטים ביממה. יובהר, כי מגבלה זו חלה גם כאשר נדרש להטיל על חייל מספר תרגולים נוספים במהלך יום שלם, בגין מספר אירועים שונים.
+                </div>
+                <div class="innerText">
+                 סט של מאמץ גופני מבוקר לא יבוצע, אלא בחלוף שעתיים לפחות מביצוע מאמץ גופני קודם, בין אם המאמץ הגופני הקודם בוצע במסגרת תרגול נוסף ובין אם בוצע במסגרת אחרת.
+                </div>
+                <div class="innerText">בין התרגילים תהיה מנוחה בת דקה אחת לפחות.</div>
+                <div class="innerText">למען הסר ספק, אין לשלב בסט את אותו התרגיל יותר מפעם אחת.</div>
+                <div class="innerText">
+                 <table>
+                     <tr>
+                         <th>תרגיל</th>
+                         <th>חיילים</th>
+                         <th>חיילות</th>
+                     </tr>
+                     <tr>
+                         <td>שכיבות סמיכה</td>
+                         <td>8</td>
+                         <td>4</td>
+                     </tr>
+                     <tr>
+                         <td>תרגילי בטן - עליות משכיבה לישיבה, רגליים ב-90 מעלות</td>
+                         <td>10</td>
+                         <td>10</td>
+                     </tr>
+                     <tr>
+                         <td>החלפת רגליים בניתור</td>
+                         <td>10</td>
+                         <td>7</td>
+                     </tr>
+                     <tr>
+                         <td>ריצה לנקודה סמוכה תוך מתן זמן ביצוע סביר</td>
+                         <td>50 מטר</td>
+                         <td>40 מטר</td>
+                     </tr>
+                 </table>
+                 
+                </div>
+             </template>
 
             <template class="videoAndImgConversions">
                 <div class="shelfPicSection ">
-                    <div class="shelfMedPicContainer">
+                    <div class="shelfMedPicContainer innerText">
                         מפקד יהיה רשאי להטיל על חייל תורנות אחת בהתאם לשגרת התורנויות ביחידה, כפעולה של תרגול נוסף בגין אירוע בודד.
                     </div>
-                    <div class="shelfMedPicContainer">
+                    <div class="shelfMedPicContainer innerText">
                         מפקד שהטיל על חייל תורנות כתרגול נוסף יוודא שהחייל שעליו הוטלה התורנות כתרגול נוסף ישלים תכנים לימודיים אותם הפסיד החייל כתוצאה מהתרגול.
                     </div>          
                 </div>
@@ -831,15 +861,28 @@
 
 
             <template class="videoVolumedDevice">
-                <div class="title"></div>
-                <iframe width="350" height="315" src="https://www.youtube.com/embed/1zc1QMWoPY4?si=lQmADumNEfen9yP4"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    allowfullscreen></iframe>
+                <div class="innerText">
+                    מפקד רשאי להורות לחייל שישגיח על ציוד צבאי או שיישא עימו ציוד צבאי כתרגול נוסף.
+                </div>
+                <div class="innerText">
+                    יש לוודא שהשגחה או נשיאה של ציוד צבאי אינה גורמת לעומס פיזי, העלול להזיק לבריאותו של החייל, או גורמת להשפלתו של החייל ופוגע בכבודו.
+                </div>
+                <div class="innerText">
+                    ניתן להורות לחייל להשגיח עו לשאת עימו ציוד צבאי, מתוך הפירוט הבא בלבד: מימייה, מחסנית ואפוד.
+                </div>
+                <div class="innerText">
+                    לא יתבצעו השגחות או נשיאות של ציוד בזמן האוכל, בשעת הט"ש ובשעות השינה.
+                </div>
+                <div class="innerText">
+                    פרק הזמן הכולל (כולל את זמן האוכל, שעת הט"ש ושעות השינה) בו החייל ישגיח או יישא ציוד כחלק מתרגול נוסף, יוגבל כלהלן:
+                    <br> 8 שעות - כל מפקד
+                    <br> 24 שעות - מ"מ, סמ"פ
+                    <br> 48 שעות - מ"פ
+                </div>
             </template>
 
             <template class="videoPlasmaPreparation">
-                <div class="title"></div>
+               
                 <iframe width="350" height="315" src="https://www.youtube.com/embed/wVmml4sZaDw?si=AC4pPz_VFt3WuOdQ"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -847,28 +890,26 @@
             </template>
 
             <template class="textAirway">
-                <div class="title"></div>
-
                 <div class="shelfPicSection ">
-                    <div class="shelfMedPicContainer">
+                    <div class="shelfMedPicContainer innerText">
                         מניעת חופשה שמשכה 5 שעות לכל היותר.
                     </div>
-                    <div class="shelfMedPicContainer">
+                    <div class="shelfMedPicContainer innerText">
                         העיכוב יבוצע בחופשה הסמוכה ביותר לאירוע שתינתן לחייל.
                     </div>
-                    <div class="shelfMedPicContainer">
+                    <div class="shelfMedPicContainer innerText">
                         סמכות - מ"מ
                     </div>
-                    <div class="shelfMedPicContainer">
+                    <div class="shelfMedPicContainer innerText">
                         יש לוודא שהחייל יוכל להגיע לביתו בבטחה לפחות שעתיים לפני כניסת שבת בתחבורה ציבורית.
                     </div>
-                    <div class="shelfMedPicContainer">
+                    <div class="shelfMedPicContainer innerText">
                         העונש יתבצע בבסיס או במתקן צבאי בלבד.
                     </div>
-                    <div class="shelfMedPicContainer">
+                    <div class="shelfMedPicContainer innerText">
                         מפקד ישאר עם החיילים המעורבים עד שהאחרון מביניהם ישוחרר לביתו.
                     </div>
-                    <div class="shelfMedPicContainer">
+                    <div class="shelfMedPicContainer innerText">
                         מותר להודיע לחייל על עיכוב ביציאה לא יאוחר מ-4 שעות לפני המועד שבו אמור החייל לצאת לחופשה.
                     </div>
 
@@ -876,21 +917,21 @@
             </template>
 
             <template class="textChestDrainage">
-                <div class="title"></div>
-                <p style="text-align: center; padding: 12% 10%;"> <b> הקדמת חזרת חייל מחופשה לצורך תחקור עבירה / קיום
-                        הליך משמעתי תבוצע באישור מפקד בדרגת סא"ל.</b>
-                </p>
+               <div class="innerText">
+                הקדמת חזרת חייל מחופשה לצורך תחקור עבירה / קיום
+                הליך משמעתי תבוצע באישור מפקד בדרגת סא"ל.
+               </div>
+               
+
             </template>
 
             <template class="textLossSign">
-                <div class="title"></div>
-                <!-- <h2 style="text-align: center;"> מניעת חופשה (ריתוק) ללא משפט: </h2> -->
                 <div class="shelfPicSection ">
-                    <div class="shelfMedPicContainer">
+                    <div class="shelfMedPicContainer innerText">
                         החלטה לגבי מניעת חופשה תתקבל עד 5 ימים מיום ביצוע העבירה, או מהמועד שנודע לראשונה על ביצוע
                         העבירה.
                     </div>
-                    <div class="shelfMedPicContainer">
+                    <div class="shelfMedPicContainer innerText">
                         אין למנוע חופשה ללא משפט אם יש במניעה כדי לפגוע בזכויות אחרות המוקנות לו עפ"י פקודות הצבא (הקלות
                         ת"ש, פטורים שונים וכד').
                     </div>
@@ -899,36 +940,34 @@
                 <p style="text-align: center;font-size: 1.2rem;"><b>מניעת חופשה ללא משפט תהיה מוגבלת ע"פ המפורט
                         בטבלה:</b> </p>
 
-                <table>
+                <table class="innerText">
                     <tr>
 
-                        <td style="font-size: 1.2rem; text-align: center;"> <b> עונש (ללא משפט) </b> </td>
-                        <td style="font-size: 1.2rem; text-align: center;"> <b> סמכות </b> </td>
+                        <th> עונש (ללא משפט) </th>
+                        <th> סמכות  </th>
                     </tr>
 
                     <tr>
-                        <td class="td-tabel">
-                            <br>
+                        <td>
+
                             מניעת חופשה עד 3 ימים
-                            <br><br>
+
                         </td>
-                        <td class="td-tabel"><br> מפקד בדרגת סרן / קצין במינוי מ"פ <br><br></td>
+                        <td>מפקד בדרגת סרן / קצין במינוי מ"פ </td>
                     </tr>
 
                     <tr>
-                        <td class="td-tabel"><br>
+                        <td>
                             מניעת חופשה עד 5 ימים
-                            <br><br>
                         </td>
-                        <td class="td-tabel"><br> מפקד בדרגת רב סרן <br><br></td>
+                        <td> מפקד בדרגת רב סרן</td>
                     </tr>
 
                     <tr>
-                        <td class="td-tabel"><br>
+                        <td>
                             מניעת חופשה למשך עד 7 ימים
-                            <br><br>
                         </td>
-                        <td class="td-tabel"><br> מפקד בדרגת סגן אלוף <br><br></td>
+                        <td> מפקד בדרגת סגן אלוף </td>
                     </tr>
 
                 </table>
@@ -936,7 +975,6 @@
             </template>
 
             <template class="textAndVideoPainTreatment">
-                <div class="title"></div>
                 <p style="text-align: center; padding: 5% 5%;"> חודד פרוטוקול הטיפול בכאב לפצוע עם כאב בלתי נסבל הכולל
                     אקטיק כקו ראשון ובמידה ואינו מגיב לאקטיק, או
                     שיש לו גישה למחזור הדם בשלב מוקדם בטיפול, תרופת הבחירה היא קטמין במינון אנלגטי (25 מ"ג). מורפין הינו
@@ -1011,10 +1049,7 @@
                 <p>במהלך הלחימה, בוצעה סכמת יהלו"ם בנפגעי תגובת קרב בצורה טובה, דבר המאפשר את רציפות הלחימה והקל על
                     מצב הפצועים תוך צמצום סיכוי להתפתחות PTSD - יש להדגיש את חשיבות סכמת היהלו"ם, לתרגל את הסכמה בכל
                     טיפול בנפגע חרדה ולוודא את הבנת חשיבותה.</p>
-                <!-- <video width="350" height="260" controls>
-                    <source src="https://rr5---sn-ua87zn7e.c.drive.google.com/videoplayback?expire=1710786237&ei=jVz4ZYT5D6Ocpb0Pn9qtoAk&ip=84.110.134.210&id=621171fb80fd0097&itag=18&source=webdrive&requiressl=yes&xpc=EghonaK1InoBAQ==&mh=_C&mm=32,26&mn=sn-ua87zn7e,sn-hgn7yn7l&ms=su,onr&mv=u&mvi=5&pl=25&ttl=transient&susc=dr&driveid=1MPvKbhohsaU1l9uPdSgx3J_97engBbkV&app=explorer&eaua=HzhmEvdHhYw&mime=video/mp4&vprv=1&prv=1&dur=39.775&lmt=1697024868724539&mt=1710774373&fvip=2&subapp=DRIVE_WEB_FILE_VIEWER&txp=0006224&sparams=expire,ei,ip,id,itag,source,requiressl,xpc,ttl,susc,driveid,app,eaua,mime,vprv,prv,dur,lmt&sig=AJfQdSswRQIgeTWXHJ15Ocix5qmYXWdsTnkqun-eL7jpNsItzJWUULgCIQCkh5v744OM0ULUb5dVoAX-qoLKCOBr1Qlt0MslMSVsCA==&lsparams=mh,mm,mn,ms,mv,mvi,pl&lsig=ALClDIEwRAIgLto6OPe53HX4qTpGwdHWfTkGxMFik4H__L48BmRSb0kCICjL3ZPFllLy4okl4c28yjk4ML5MLKw38RUYyrkQLFbo&cpn=JE8d-9301vfr5N_t&c=WEB_EMBEDDED_PLAYER&cver=1.20240312.01.00" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video> -->
+
                 <a href="https://drive.google.com/file/d/1MPvKbhohsaU1l9uPdSgx3J_97engBbkV/view">סירטון מגן ללוחם</a>
                 <p>בכל נפגע תגובת קרב יש לשלול פציעות פיזיות בטרם הגדרתו כנפגע תגובת קרב.</p>
                 <p>הסבר על חשיבות שיחות משאבים לאחר אירוע.</p>
@@ -1051,102 +1086,6 @@
                             src="../assets/images/grapics/test/start-test-button.svg">
                     </div>
                 </div>
-                <!-- <div class="examQuestionContainer hidden">
-                    <div class="testCurrentQuestionDisplay"></div>
-                    <div class="questionContainer">
-                        <div class="question">שאלה על תרופה שיש בה די הרבה מלל אבל לא המון כי השאלות לא כזה ארוכות</div>
-                        <div class="multiple answersContainer answersContainers hidden">
-                            <div class="ans ans1">
-                                <img class="practiceQuestionSqure examQuestionSqure1 blue"
-                                    src="../assets/images/grapics/practice/answer-squre-unmarked.svg">
-                                <div>תשובה כלשהיא נראה לי</div>
-                            </div>
-                            <div class="ans ans2">
-                                <img class="practiceQuestionSqure examQuestionSqure2 blue"
-                                    src="../assets/images/grapics/practice/answer-squre-unmarked.svg">
-                                <div>מעניין אותי מה קורה שהתשובה מממממש ממש ארוכה כאילו שבטוח שהיא תיהיה 2 שורות ויש
-                                    סיכוי שהיא אפילו תיהי שלוש</div>
-                            </div>
-                            <div class="ans ans3">
-                                <img class="practiceQuestionSqure examQuestionSqure3 blue"
-                                    src="../assets/images/grapics/practice/answer-squre-unmarked.svg">
-                                <div>תשובה כלשהיא נראה לי</div>
-                            </div>
-                            <div class="ans ans4">
-                                <img class="practiceQuestionSqure examQuestionSqure4 blue"
-                                    src="../assets/images/grapics/practice/answer-squre-unmarked.svg">
-                                <div>תשובה כלשהיא נראה לי</div>
-                            </div>
-                        </div>
-                        <div class="binary answersContainers hidden">
-                            <div class="ans true">
-                                <img class="binaryMarks" src="../assets/images/grapics/test/check-mark.svg">
-                                <div>נכון</div>
-                            </div>
-                            <div class="ans false">
-                                <img class="binaryMarks" src="../assets/images/grapics/test/x-mark.svg">
-                                <div>לא נכון</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="answerTracker">
-                        <div class="answerPill answerPill1">1</div>
-                        <div class="answerPill answerPill2">2</div>
-                        <div class="answerPill answerPill3">3</div>
-                        <div class="answerPill answerPill4">4</div>
-                        <div class="answerPill answerPill5">5</div>
-                        <div class="answerPill answerPill6">6</div>
-                        <div class="answerPill answerPill7">7</div>
-                        <div class="answerPill answerPill8">8</div>
-                        <div class="answerPill answerPill9">9</div>
-                        <div class="answerPill answerPill10">10</div>
-                        <div class="answerPill answerPill11">11</div>
-                        <div class="answerPill answerPill12">12</div>
-                        <div class="answerPill answerPill13">13</div>
-                        <div class="answerPill answerPill14">14</div>
-                        <div class="answerPill answerPill15">15</div>
-                    </div>
-                    <img class="examSubmit gray" src="../assets/images/grapics/test/submit-button.svg" alt="check">
-                    <div class="testArrows">
-                        <img class="testArrow testArrowRight blue"
-                            src="../assets/images/grapics/home-page/right-arrow.svg" alt="arrow">
-                        <img class="testArrow testArrowLeft blue"
-                            src="../assets/images/grapics/home-page/left-arrow.svg" alt="arrow">
-                    </div>
-                </div>
-                <div class="examSubmitionPopUp darkScreen hidden">
-                    <div class="popUpContainer">
-                        <div>בטוחים שאתם רוצים להגיש?<br> לאחר ההגשה לא תוכלו לחזור למבחן</div>
-                        <div>
-                            <img class="popUpBackToExam popUpButtons"
-                                src="../assets/images/grapics/test/back-to-test-button.svg">
-                            <img class="popUpSubmit popUpButtons"
-                                src="../assets/images/grapics/test/submit-button-popup.svg">
-                        </div>
-                    </div>
-                </div>
-                <div class="afterExamPage hidden">
-                    <div class="examVerbalGrade">כל הכבוד</div>
-                    <div class="userNameBig"></div>
-                    <div class="ExamgradeConteiner">ציון:
-                        <span class="ExamgradeBig"></span>
-                    </div>
-                    <div class="rightAnswersConteiner">
-                        <span class="rightAnswers"></span>
-                        תשובות נכונות
-                    </div>
-                    <div class="timerConteiner"></div>
-                    <div class="afterExamData">
-                        <span class="userNameSmall"></span>|
-                        <span class="ExamgradeSmall"></span>|
-                        <span class="date"></span>|
-                        <span class="time"></span>
-                    </div>
-                    <div>
-                        <img class="reviewTest afterExamButtons"
-                            src="../assets/images/grapics/test/review-test-button.svg">
-                    </div>
-                </div>-->
             </div>
         </div>
     </div>
