@@ -16,11 +16,19 @@
     font-weight: 800;
 }
 
+@font-face {
+    font-family: heebo;
+    src: url("../assets/fonts/heebo.regular.ttf");
+    /* font-weight: 800; */
+}
+
 html,
 body {
     -webkit-user-select: none;
     user-select: none;
-    font-family: "segoeu";
+    /* font-family: "segoeu"; */
+    font-family: "heebo";
+
     font-weight: 100;
     width: 100%;
     height: 100%;
@@ -94,14 +102,20 @@ body {
 .logo {
     width: 7rem;
 }
+
+.open-title {
+    position: absolute;
+    top: 10%;
+    margin-top: 12%;
+}
 .note-container {
     position: relative;
-    top: -3%;
+    /* top: -3%; */
     background-image: url(../assets/images/note2-Photoroom.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
     width: 140%;
-    padding-top: 27%;
+    padding-top: 25%;
 }
 
 
@@ -116,10 +130,12 @@ body {
     /* background-image: url("../assets/images/note2-Photoroom.png");
     background-repeat: no-repeat;
     background-size: 100% 100%; */
-    padding: 1% 29% 15%;
+    padding: 6% 29% 15%;
     z-index: 1;
     color:#5d5656;
     line-height: 2rem;
+    line-height: 2.45rem;
+    rotate: -3.8deg;
 }
 
 .btnNext {
@@ -127,7 +143,9 @@ body {
     position: absolute;
     width: 40%;
     font-size: 1.3rem;
-    font-family: "segoeu";
+    /* font-family: "segoeu"; */
+    font-family: "heebo";
+
     border-radius: 10px;
     color:#FAF3DD;
     border: none;
@@ -285,7 +303,9 @@ body {
     padding-bottom: 1em;
     padding-top: 1em;
     direction: ltr;
-    font-family: "segoeu";
+    /* font-family: "segoeu"; */
+    font-family: "heebo";
+
     text-align: center;
     z-index: 2;
     outline: none;
@@ -401,7 +421,9 @@ body {
 }
 
 .orangeCard {
-    background-image: url("../assets/images/cards/Asset\ 8.svg");
+    /* background-image: url("../assets/images/cards/Asset\ 8.svg"); */
+    background-image: url("../assets/images/cards/Asset\ 11.svg");
+
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -413,7 +435,9 @@ body {
 }
 
 .pinkCard {
-    background-image: url("../assets/images/cards/Asset\ 11.svg");
+    /* background-image: url("../assets/images/cards/Asset\ 11.svg"); */
+    background-image: url("../assets/images/cards/Asset\ 8.svg");
+
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }

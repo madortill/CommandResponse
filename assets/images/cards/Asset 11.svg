@@ -4,6 +4,8 @@
     <style>
       .cls-1 {
         fill: #f7b1cb;
+
+        fill: #CCD5AE;
       }
 
       .cls-2 {
@@ -12,6 +14,10 @@
 
       .cls-3 {
         fill: #dc607d;
+
+        fill: #354F52;
+        fill: #9ac6a7;
+
       }
 
       .cls-4 {
@@ -19,7 +25,10 @@
       }
 
       .cls-5 {
-        fill: #db617d;
+        <!-- fill: #db617d; -->
+
+        <!-- fill: #354F52; -->
+        fill: #9ac6a7;
       }
 
       .cls-6 {
@@ -35,7 +44,9 @@
       }
 
       .cls-9 {
-        fill: #f5a4b5;
+        <!-- fill: #f5a4b5; -->
+
+        fill: #84A98C;
       }
 
       .cls-10 {
