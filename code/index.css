@@ -172,61 +172,56 @@ body {
 
 
 /* צבעים */
-.blue {
+/* .blue {
     filter: hue-rotate(140deg);
-}
+} */
 
-.lightGreen {
+/* .lightGreen { */
     /* filter: hue-rotate(30deg); */
-    filter: hue-rotate(140deg);
+    /* filter: hue-rotate(140deg); */
+/* } */
 
-}
-
-.teal {
+/* .teal { */
     /* filter: hue-rotate(110deg); */
-    filter: hue-rotate(140deg);
+    /* filter: hue-rotate(140deg); */
     
-}
+/* } */
 
-.purple {
+/* .purple { */
     /* filter: hue-rotate(205deg); */
-    filter: hue-rotate(140deg);
-   
-}
+    /* filter: hue-rotate(140deg); */ 
+/* } */
 
-.yellow {
+/* .yellow { */
     /* filter: hue-rotate(301deg) brightness(29%) saturate(5); */
-    filter: hue-rotate(140deg);
-  
-}
+    /* filter: hue-rotate(140deg); */
+/* } */
 
-.orange {
+/* .orange { */
     /* filter: hue-rotate(320deg); */
-    filter: hue-rotate(140deg);
-}   
+    /* filter: hue-rotate(140deg); */
+/* }    */
 
-.darkGreen {
+/* .darkGreen { */
     /* filter: hue-rotate(80deg); */
-    filter: hue-rotate(140deg);
+    /* filter: hue-rotate(140deg); */
+/* } */
 
-}
-
-.pink {
+/* .pink { */
     /* filter: hue-rotate(280deg); */
-    filter: hue-rotate(140deg);
- 
-}
+    /* filter: hue-rotate(140deg); */
+/* } */
 
-.gray {
+/* .gray { */
     /* filter: grayscale(100); */
-    filter: hue-rotate(140deg);
+    /* filter: hue-rotate(140deg); */
    
-}
+/* } */
 
-.red {
+/* .red { */
     /* filter: hue-rotate(301deg) brightness(29%) saturate(5); */
-    filter: hue-rotate(140deg);
-}
+    /* filter: hue-rotate(140deg); */
+/* } */
 
 .sub-titles {
     font-weight: bold;
