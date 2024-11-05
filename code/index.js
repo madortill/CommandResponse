@@ -148,6 +148,8 @@ window.addEventListener("load", () => {
         arrMedsButtons[i].addEventListener('click', creatMedShelfs);
     };
 
+    document.querySelector(`.testButton`).addEventListener("click", onClickExam);
+
 });
 
 /* onClickAbout
@@ -358,7 +360,7 @@ const creatMedShelfs = (event) => {
     document.querySelector(`.shelfsButtons`).classList.remove("hidden");
     document.querySelector(`.homeButton`).addEventListener("click", sendToHomePage);
     // שומר שאלות ושולח לתרגול
-    QUESTIONS = shuffle(DATA[strCurrentMedType]["questionsPractice"]);
+    QUESTIONS = shuffle(DATA["questionsPractice"]);
     // משנה צבע מדפים ושם מאזין לפתיחה שלהם
     for (let i = 1; i <= objMedsShelfsColors[strCurrentMedType][1]; i++) {
         if (!(strCurrentMedType === 'breathing' || strCurrentMedType === "chronicDiseases")) {

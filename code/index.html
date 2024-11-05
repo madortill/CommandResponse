@@ -89,6 +89,7 @@
                 </div>
                 <br>
             </div>
+            <img class="testButton buttons" src="../assets/images/grapics/med-shelfs/test-button.svg">
         </div>
 
         <div class="medShelfs">
@@ -470,7 +471,9 @@
                                 שירות צרכים וטובות הנאה: </b>
                             <br>התגובה הפיקודית לא תשרת צרכים וטובות הנאה של המפקד- ההוראות באות לשרת רק את צרכי המערכת.
                         </div>
-
+                        <div>או בראשי תיבות: 
+                            <span style="font-weight: bold;">סמ"י בכ"ה ע"ל הא"ש</span>
+                        </div>
                     </div>
 
                 </div>
@@ -1093,10 +1096,10 @@
             <div class="examPage hidden">
                 <div class="beforeExamPage hidden">
                     <div class="beforeExamInstractions">אתם תעברו עכשיו מבחן על החומר שלמדתם בלומדה, המבחן עם ציון אז
-                        וודאו שאתם מרגישים מוכנים. המבחן מכיל 15 שאלות אמריקאיות</div>
+                        וודאו שאתם מרגישים מוכנים. המבחן מכיל 4 שאלות אמריקאיות</div>
                     <img class="examCharacter" src="../assets/images/grapics/practice/character.svg">
                     <div class="beforeExamBobble">לפני שנתחיל במבחן כדאי שאדע איך קוראים לכם. הכניסו את שמכם המלא
-                        החלונית למטה ולחצו על הכפתור כדי להתחיל במבחן</div>
+                        בחלונית למטה ולחצו על הכפתור כדי להתחיל במבחן</div>
                     <input class="examNameInput" android:windowSoftInputMode="stateVisible"
                         placeholder="הקלידו כאן שם מלא" name="name" lang="he" type="text" />
                     <div class="beforeTestButtonsContainer">
@@ -1104,9 +1107,96 @@
                             src="../assets/images/grapics/test/start-test-button.svg">
                     </div>
                 </div>
+
+                <div class="examQuestionContainer hidden">
+                    <div class="testCurrentQuestionDisplay"></div>
+                    <div class="questionContainer">
+                        <div class="question">שאלה על תרופה שיש בה די הרבה מלל אבל לא המון כי השאלות לא כזה ארוכות</div>
+                        <div class="multiple answersContainer answersContainers hidden">
+                            <div class="ans ans1">
+                                <img class="practiceQuestionSqure examQuestionSqure1 blue" src="../assets/images/grapics/practice/answer-squre-unmarked.svg">
+                                <div>תשובה כלשהיא נראה לי</div>
+                            </div>
+                            <div class="ans ans2">
+                                <img class="practiceQuestionSqure examQuestionSqure2 blue" src="../assets/images/grapics/practice/answer-squre-unmarked.svg">
+                                <div>מעניין אותי מה קורה שהתשובה מממממש ממש ארוכה כאילו שבטוח שהיא תיהיה 2 שורות ויש סיכוי שהיא אפילו תיהי שלוש</div>
+                            </div>
+                            <div class="ans ans3">
+                                <img class="practiceQuestionSqure examQuestionSqure3 blue" src="../assets/images/grapics/practice/answer-squre-unmarked.svg">
+                                <div>תשובה כלשהיא נראה לי</div>
+                            </div>
+                            <div class="ans ans4">
+                                <img class="practiceQuestionSqure examQuestionSqure4 blue" src="../assets/images/grapics/practice/answer-squre-unmarked.svg">
+                                <div>תשובה כלשהיא נראה לי</div>
+                            </div>
+                        </div>
+                        <div class="binary answersContainers hidden">
+                            <div class="ans true">
+                                <img class="binaryMarks" src="../assets/images/grapics/test/check-mark.svg">
+                                <div>נכון</div>
+                            </div>
+                            <div class="ans false">
+                                <img class="binaryMarks" src="../assets/images/grapics/test/x-mark.svg">
+                                <div>לא נכון</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="answerTracker">
+                        <div class="answerPill answerPill1">1</div>
+                        <div class="answerPill answerPill2">2</div>
+                        <div class="answerPill answerPill3">3</div>
+                        <div class="answerPill answerPill4">4</div>
+                        <!-- <div class="answerPill answerPill5">5</div>
+                        <div class="answerPill answerPill6">6</div>
+                        <div class="answerPill answerPill7">7</div>
+                        <div class="answerPill answerPill8">8</div>
+                        <div class="answerPill answerPill9">9</div>
+                        <div class="answerPill answerPill10">10</div>
+                        <div class="answerPill answerPill11">11</div>
+                        <div class="answerPill answerPill12">12</div>
+                        <div class="answerPill answerPill13">13</div>
+                        <div class="answerPill answerPill14">14</div>
+                        <div class="answerPill answerPill15">15</div> -->
+                    </div>
+                    <img class="examSubmit gray" src="../assets/images/grapics/test/submit-button.svg" alt="check">
+                    <div class="testArrows">
+                        <img class="testArrow testArrowRight blue" src="../assets/images/grapics/home-page/right-arrow.svg" alt="arrow">
+                        <img class="testArrow testArrowLeft blue" src="../assets/images/grapics/home-page/left-arrow.svg" alt="arrow">
+                    </div>
+                </div>
+                <div class="examSubmitionPopUp darkScreen hidden">
+                    <div class="popUpContainer">
+                        <div>בטוחים שאתם רוצים להגיש?<br> לאחר ההגשה לא תוכלו לחזור למבחן</div>
+                        <div>
+                            <img class="popUpBackToExam popUpButtons" src="../assets/images/grapics/test/back-to-test-button.svg">
+                            <img class="popUpSubmit popUpButtons" src="../assets/images/grapics/test/submit-button-popup.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="afterExamPage hidden">
+                    <div class="examVerbalGrade">כל הכבוד</div>
+                    <div class="userNameBig"></div>
+                    <div class="ExamgradeConteiner">ציון:
+                        <span class="ExamgradeBig"></span>
+                    </div>
+                    <div class="rightAnswersConteiner">
+                        <span class="rightAnswers"></span>
+                        תשובות נכונות
+                    </div>
+                    <div class="timerConteiner"></div>
+                    <div class="afterExamData">
+                        <span class="userNameSmall"></span>|
+                        <span class="ExamgradeSmall"></span>|
+                        <span class="date"></span>|
+                        <span class="time"></span>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
 </body>
 
 </html>
+
+
